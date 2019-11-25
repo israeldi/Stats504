@@ -1,0 +1,1817 @@
+--------------------------------------------------------------------------------
+Codebook for NHGIS data file 'nhgis0001_ts_nominal_tract'
+--------------------------------------------------------------------------------
+ 
+Contents
+    - Data Summary
+    - Data Dictionary
+    - Geographic Integration Methods
+    - Source Data
+    - Citation and Use
+ 
+Detailed notes on time series design and comparability are available at: 
+    https://www.nhgis.org/sites/www.nhgis.org/files/nhgis_time_series_tables.pdf 
+ 
+--------------------------------------------------------------------------------
+Data Summary
+--------------------------------------------------------------------------------
+ 
+Time series layout:     Time varies by column
+Geographic level:       Census Tract (by State--County)
+Geographic integration: Nominal
+Years:                  1970, 1980, 1990, 2000, 2010
+
+!WARNING! In a "Time varies by column" layout, each row provides statistics
+          from multiple censuses for areas that had a matching code across
+          time. For the Census Tract geographic level, matching codes may
+          refer to distinctly different areas in different censuses. We
+          strongly recommend checking GIS files to determine the geographic
+          consistency of your areas of interest for your period of interest.
+ 
+Tables:
+ 
+1. Persons by Sex [2] by Age [18]
+   Years: 1970, 1980, 1990, 2000, 2010
+   Code:  B58
+ 
+--------------------------------------------------------------------------------
+Data Dictionary
+--------------------------------------------------------------------------------
+ 
+Context Fields 
+        NHGISCODE:   NHGIS Integrated Geographic Unit Code
+        GJOIN1970:   GIS Join Match Code, 1970
+        GJOIN1980:   GIS Join Match Code, 1980
+        GJOIN1990:   GIS Join Match Code, 1990
+        GJOIN2000:   GIS Join Match Code, 2000
+        GJOIN2010:   GIS Join Match Code, 2010
+        STATE:       NHGIS Integrated State Name
+        STATEFP:     FIPS State Code
+        STATENH:     NHGIS Integrated State Code
+        COUNTY:      NHGIS Integrated County Name
+        COUNTYFP:    FIPS County Code
+        COUNTYNH:    NHGIS Integrated County Code
+        TRACTA:      NHGIS Integrated Census Tract Code
+        NAME1970:    Area Name, 1970
+        NAME1980:    Area Name, 1980
+        NAME1990:    Area Name, 1990
+        NAME2000:    Area Name, 2000
+        NAME2010:    Area Name, 2010
+ 
+Table 1: (B58) Persons by Sex [2] by Age [18]
+    Time series AA: Persons: Male ~ Under 5 years
+        B58AA1970:   1970: Persons: Male ~ Under 5 years
+        B58AA1980:   1980: Persons: Male ~ Under 5 years
+        B58AA1990:   1990: Persons: Male ~ Under 5 years
+        B58AA2000:   2000: Persons: Male ~ Under 5 years
+        B58AA2010:   2010: Persons: Male ~ Under 5 years
+    Time series AB: Persons: Male ~ 5 to 9 years
+        B58AB1970:   1970: Persons: Male ~ 5 to 9 years
+        B58AB1980:   1980: Persons: Male ~ 5 to 9 years
+        B58AB1990:   1990: Persons: Male ~ 5 to 9 years
+        B58AB2000:   2000: Persons: Male ~ 5 to 9 years
+        B58AB2010:   2010: Persons: Male ~ 5 to 9 years
+    Time series AC: Persons: Male ~ 10 to 14 years
+        B58AC1970:   1970: Persons: Male ~ 10 to 14 years
+        B58AC1980:   1980: Persons: Male ~ 10 to 14 years
+        B58AC1990:   1990: Persons: Male ~ 10 to 14 years
+        B58AC2000:   2000: Persons: Male ~ 10 to 14 years
+        B58AC2010:   2010: Persons: Male ~ 10 to 14 years
+    Time series AD: Persons: Male ~ 15 to 17 years
+        B58AD1970:   1970: Persons: Male ~ 15 to 17 years
+        B58AD1980:   1980: Persons: Male ~ 15 to 17 years
+        B58AD1990:   1990: Persons: Male ~ 15 to 17 years
+        B58AD2000:   2000: Persons: Male ~ 15 to 17 years
+        B58AD2010:   2010: Persons: Male ~ 15 to 17 years
+    Time series AE: Persons: Male ~ 18 and 19 years
+        B58AE1970:   1970: Persons: Male ~ 18 and 19 years
+        B58AE1980:   1980: Persons: Male ~ 18 and 19 years
+        B58AE1990:   1990: Persons: Male ~ 18 and 19 years
+        B58AE2000:   2000: Persons: Male ~ 18 and 19 years
+        B58AE2010:   2010: Persons: Male ~ 18 and 19 years
+    Time series AF: Persons: Male ~ 20 years
+        B58AF1970:   1970: Persons: Male ~ 20 years
+        B58AF1980:   1980: Persons: Male ~ 20 years
+        B58AF1990:   1990: Persons: Male ~ 20 years
+        B58AF2000:   2000: Persons: Male ~ 20 years
+        B58AF2010:   2010: Persons: Male ~ 20 years
+    Time series AG: Persons: Male ~ 21 years
+        B58AG1970:   1970: Persons: Male ~ 21 years
+        B58AG1980:   1980: Persons: Male ~ 21 years
+        B58AG1990:   1990: Persons: Male ~ 21 years
+        B58AG2000:   2000: Persons: Male ~ 21 years
+        B58AG2010:   2010: Persons: Male ~ 21 years
+    Time series AH: Persons: Male ~ 22 to 24 years
+        B58AH1970:   1970: Persons: Male ~ 22 to 24 years
+        B58AH1980:   1980: Persons: Male ~ 22 to 24 years
+        B58AH1990:   1990: Persons: Male ~ 22 to 24 years
+        B58AH2000:   2000: Persons: Male ~ 22 to 24 years
+        B58AH2010:   2010: Persons: Male ~ 22 to 24 years
+    Time series AI: Persons: Male ~ 25 to 29 years
+        B58AI1970:   1970: Persons: Male ~ 25 to 29 years
+        B58AI1980:   1980: Persons: Male ~ 25 to 29 years
+        B58AI1990:   1990: Persons: Male ~ 25 to 29 years
+        B58AI2000:   2000: Persons: Male ~ 25 to 29 years
+        B58AI2010:   2010: Persons: Male ~ 25 to 29 years
+    Time series AJ: Persons: Male ~ 30 to 34 years
+        B58AJ1970:   1970: Persons: Male ~ 30 to 34 years
+        B58AJ1980:   1980: Persons: Male ~ 30 to 34 years
+        B58AJ1990:   1990: Persons: Male ~ 30 to 34 years
+        B58AJ2000:   2000: Persons: Male ~ 30 to 34 years
+        B58AJ2010:   2010: Persons: Male ~ 30 to 34 years
+    Time series AK: Persons: Male ~ 35 to 44 years
+        B58AK1970:   1970: Persons: Male ~ 35 to 44 years
+        B58AK1980:   1980: Persons: Male ~ 35 to 44 years
+        B58AK1990:   1990: Persons: Male ~ 35 to 44 years
+        B58AK2000:   2000: Persons: Male ~ 35 to 44 years
+        B58AK2010:   2010: Persons: Male ~ 35 to 44 years
+    Time series AL: Persons: Male ~ 45 to 54 years
+        B58AL1970:   1970: Persons: Male ~ 45 to 54 years
+        B58AL1980:   1980: Persons: Male ~ 45 to 54 years
+        B58AL1990:   1990: Persons: Male ~ 45 to 54 years
+        B58AL2000:   2000: Persons: Male ~ 45 to 54 years
+        B58AL2010:   2010: Persons: Male ~ 45 to 54 years
+    Time series AM: Persons: Male ~ 55 to 59 years
+        B58AM1970:   1970: Persons: Male ~ 55 to 59 years
+        B58AM1980:   1980: Persons: Male ~ 55 to 59 years
+        B58AM1990:   1990: Persons: Male ~ 55 to 59 years
+        B58AM2000:   2000: Persons: Male ~ 55 to 59 years
+        B58AM2010:   2010: Persons: Male ~ 55 to 59 years
+    Time series AN: Persons: Male ~ 60 and 61 years
+        B58AN1970:   1970: Persons: Male ~ 60 and 61 years
+        B58AN1980:   1980: Persons: Male ~ 60 and 61 years
+        B58AN1990:   1990: Persons: Male ~ 60 and 61 years
+        B58AN2000:   2000: Persons: Male ~ 60 and 61 years
+        B58AN2010:   2010: Persons: Male ~ 60 and 61 years
+    Time series AO: Persons: Male ~ 62 to 64 years
+        B58AO1970:   1970: Persons: Male ~ 62 to 64 years
+        B58AO1980:   1980: Persons: Male ~ 62 to 64 years
+        B58AO1990:   1990: Persons: Male ~ 62 to 64 years
+        B58AO2000:   2000: Persons: Male ~ 62 to 64 years
+        B58AO2010:   2010: Persons: Male ~ 62 to 64 years
+    Time series AP: Persons: Male ~ 65 to 74 years
+        B58AP1970:   1970: Persons: Male ~ 65 to 74 years
+        B58AP1980:   1980: Persons: Male ~ 65 to 74 years
+        B58AP1990:   1990: Persons: Male ~ 65 to 74 years
+        B58AP2000:   2000: Persons: Male ~ 65 to 74 years
+        B58AP2010:   2010: Persons: Male ~ 65 to 74 years
+    Time series AQ: Persons: Male ~ 75 to 84 years
+        B58AQ1970:   1970: Persons: Male ~ 75 to 84 years
+        B58AQ1980:   1980: Persons: Male ~ 75 to 84 years
+        B58AQ1990:   1990: Persons: Male ~ 75 to 84 years
+        B58AQ2000:   2000: Persons: Male ~ 75 to 84 years
+        B58AQ2010:   2010: Persons: Male ~ 75 to 84 years
+    Time series AR: Persons: Male ~ 85 years and over
+        B58AR1970:   1970: Persons: Male ~ 85 years and over
+        B58AR1980:   1980: Persons: Male ~ 85 years and over
+        B58AR1990:   1990: Persons: Male ~ 85 years and over
+        B58AR2000:   2000: Persons: Male ~ 85 years and over
+        B58AR2010:   2010: Persons: Male ~ 85 years and over
+    Time series AS: Persons: Female ~ Under 5 years
+        B58AS1970:   1970: Persons: Female ~ Under 5 years
+        B58AS1980:   1980: Persons: Female ~ Under 5 years
+        B58AS1990:   1990: Persons: Female ~ Under 5 years
+        B58AS2000:   2000: Persons: Female ~ Under 5 years
+        B58AS2010:   2010: Persons: Female ~ Under 5 years
+    Time series AT: Persons: Female ~ 5 to 9 years
+        B58AT1970:   1970: Persons: Female ~ 5 to 9 years
+        B58AT1980:   1980: Persons: Female ~ 5 to 9 years
+        B58AT1990:   1990: Persons: Female ~ 5 to 9 years
+        B58AT2000:   2000: Persons: Female ~ 5 to 9 years
+        B58AT2010:   2010: Persons: Female ~ 5 to 9 years
+    Time series AU: Persons: Female ~ 10 to 14 years
+        B58AU1970:   1970: Persons: Female ~ 10 to 14 years
+        B58AU1980:   1980: Persons: Female ~ 10 to 14 years
+        B58AU1990:   1990: Persons: Female ~ 10 to 14 years
+        B58AU2000:   2000: Persons: Female ~ 10 to 14 years
+        B58AU2010:   2010: Persons: Female ~ 10 to 14 years
+    Time series AV: Persons: Female ~ 15 to 17 years
+        B58AV1970:   1970: Persons: Female ~ 15 to 17 years
+        B58AV1980:   1980: Persons: Female ~ 15 to 17 years
+        B58AV1990:   1990: Persons: Female ~ 15 to 17 years
+        B58AV2000:   2000: Persons: Female ~ 15 to 17 years
+        B58AV2010:   2010: Persons: Female ~ 15 to 17 years
+    Time series AW: Persons: Female ~ 18 and 19 years
+        B58AW1970:   1970: Persons: Female ~ 18 and 19 years
+        B58AW1980:   1980: Persons: Female ~ 18 and 19 years
+        B58AW1990:   1990: Persons: Female ~ 18 and 19 years
+        B58AW2000:   2000: Persons: Female ~ 18 and 19 years
+        B58AW2010:   2010: Persons: Female ~ 18 and 19 years
+    Time series AX: Persons: Female ~ 20 years
+        B58AX1970:   1970: Persons: Female ~ 20 years
+        B58AX1980:   1980: Persons: Female ~ 20 years
+        B58AX1990:   1990: Persons: Female ~ 20 years
+        B58AX2000:   2000: Persons: Female ~ 20 years
+        B58AX2010:   2010: Persons: Female ~ 20 years
+    Time series AY: Persons: Female ~ 21 years
+        B58AY1970:   1970: Persons: Female ~ 21 years
+        B58AY1980:   1980: Persons: Female ~ 21 years
+        B58AY1990:   1990: Persons: Female ~ 21 years
+        B58AY2000:   2000: Persons: Female ~ 21 years
+        B58AY2010:   2010: Persons: Female ~ 21 years
+    Time series AZ: Persons: Female ~ 22 to 24 years
+        B58AZ1970:   1970: Persons: Female ~ 22 to 24 years
+        B58AZ1980:   1980: Persons: Female ~ 22 to 24 years
+        B58AZ1990:   1990: Persons: Female ~ 22 to 24 years
+        B58AZ2000:   2000: Persons: Female ~ 22 to 24 years
+        B58AZ2010:   2010: Persons: Female ~ 22 to 24 years
+    Time series BA: Persons: Female ~ 25 to 29 years
+        B58BA1970:   1970: Persons: Female ~ 25 to 29 years
+        B58BA1980:   1980: Persons: Female ~ 25 to 29 years
+        B58BA1990:   1990: Persons: Female ~ 25 to 29 years
+        B58BA2000:   2000: Persons: Female ~ 25 to 29 years
+        B58BA2010:   2010: Persons: Female ~ 25 to 29 years
+    Time series BB: Persons: Female ~ 30 to 34 years
+        B58BB1970:   1970: Persons: Female ~ 30 to 34 years
+        B58BB1980:   1980: Persons: Female ~ 30 to 34 years
+        B58BB1990:   1990: Persons: Female ~ 30 to 34 years
+        B58BB2000:   2000: Persons: Female ~ 30 to 34 years
+        B58BB2010:   2010: Persons: Female ~ 30 to 34 years
+    Time series BC: Persons: Female ~ 35 to 44 years
+        B58BC1970:   1970: Persons: Female ~ 35 to 44 years
+        B58BC1980:   1980: Persons: Female ~ 35 to 44 years
+        B58BC1990:   1990: Persons: Female ~ 35 to 44 years
+        B58BC2000:   2000: Persons: Female ~ 35 to 44 years
+        B58BC2010:   2010: Persons: Female ~ 35 to 44 years
+    Time series BD: Persons: Female ~ 45 to 54 years
+        B58BD1970:   1970: Persons: Female ~ 45 to 54 years
+        B58BD1980:   1980: Persons: Female ~ 45 to 54 years
+        B58BD1990:   1990: Persons: Female ~ 45 to 54 years
+        B58BD2000:   2000: Persons: Female ~ 45 to 54 years
+        B58BD2010:   2010: Persons: Female ~ 45 to 54 years
+    Time series BE: Persons: Female ~ 55 to 59 years
+        B58BE1970:   1970: Persons: Female ~ 55 to 59 years
+        B58BE1980:   1980: Persons: Female ~ 55 to 59 years
+        B58BE1990:   1990: Persons: Female ~ 55 to 59 years
+        B58BE2000:   2000: Persons: Female ~ 55 to 59 years
+        B58BE2010:   2010: Persons: Female ~ 55 to 59 years
+    Time series BF: Persons: Female ~ 60 and 61 years
+        B58BF1970:   1970: Persons: Female ~ 60 and 61 years
+        B58BF1980:   1980: Persons: Female ~ 60 and 61 years
+        B58BF1990:   1990: Persons: Female ~ 60 and 61 years
+        B58BF2000:   2000: Persons: Female ~ 60 and 61 years
+        B58BF2010:   2010: Persons: Female ~ 60 and 61 years
+    Time series BG: Persons: Female ~ 62 to 64 years
+        B58BG1970:   1970: Persons: Female ~ 62 to 64 years
+        B58BG1980:   1980: Persons: Female ~ 62 to 64 years
+        B58BG1990:   1990: Persons: Female ~ 62 to 64 years
+        B58BG2000:   2000: Persons: Female ~ 62 to 64 years
+        B58BG2010:   2010: Persons: Female ~ 62 to 64 years
+    Time series BH: Persons: Female ~ 65 to 74 years
+        B58BH1970:   1970: Persons: Female ~ 65 to 74 years
+        B58BH1980:   1980: Persons: Female ~ 65 to 74 years
+        B58BH1990:   1990: Persons: Female ~ 65 to 74 years
+        B58BH2000:   2000: Persons: Female ~ 65 to 74 years
+        B58BH2010:   2010: Persons: Female ~ 65 to 74 years
+    Time series BI: Persons: Female ~ 75 to 84 years
+        B58BI1970:   1970: Persons: Female ~ 75 to 84 years
+        B58BI1980:   1980: Persons: Female ~ 75 to 84 years
+        B58BI1990:   1990: Persons: Female ~ 75 to 84 years
+        B58BI2000:   2000: Persons: Female ~ 75 to 84 years
+        B58BI2010:   2010: Persons: Female ~ 75 to 84 years
+    Time series BJ: Persons: Female ~ 85 years and over
+        B58BJ1970:   1970: Persons: Female ~ 85 years and over
+        B58BJ1980:   1980: Persons: Female ~ 85 years and over
+        B58BJ1990:   1990: Persons: Female ~ 85 years and over
+        B58BJ2000:   2000: Persons: Female ~ 85 years and over
+        B58BJ2010:   2010: Persons: Female ~ 85 years and over
+ 
+--------------------------------------------------------------------------------
+Geographic Integration Methods
+--------------------------------------------------------------------------------
+ 
+Nominal Integration:
+
+    Nominally integrated tables link geographic units across time according to
+    their names and codes, disregarding any changes in unit boundaries. The
+    identified geographic units match those from each census source, so the
+    spatial definitions and total number of units may vary from one time to
+    another (e.g., a city may annex land, a tract may be split in two, a new
+    county may be created, etc.). The tables include data for a particular
+    geographic unit only at times when the unit's name or code was in use,
+    resulting in truncated time series for some areas.
+    
+    Users should be cautious when interpreting changes in nominally integrated
+    time series because a single unit code may refer to distinctly different
+    areas at different times. If you are uncertain whether any boundaries
+    changed in your areas of interest, we recommend inspecting NHGIS GIS files
+    to confirm. (NHGIS supplies GIS boundary files for all units and years in
+    nominally integrated time series *except* 1970 places and county
+    subdivisions.)
+    
+    Alternatively, for some topics and time periods, NHGIS provides
+    "geographically standardized" time series, which provide data from multiple
+    times for a single census's geographic units (e.g., 2000 and 2010 data for
+    2010 census units). A disadvantage of standardized time series is that, in
+    areas where source units do not nest perfectly within a unit of the standard
+    year (e.g., where a source 2000 unit intersects multiple 2010 units), NHGIS
+    applies interpolation to standardize the data, a process which may
+    occasionally produce substantial errors.
+
+Complete documentation on time series integration methods is available at:
+    https://www.nhgis.org/documentation/time-series
+ 
+--------------------------------------------------------------------------------
+Source Data
+--------------------------------------------------------------------------------
+ 
+Additional documentation on NHGIS data sources is available at:
+    https://www.nhgis.org/documentation/tabular-data
+
+Table 1: (B58) Persons by Sex [2] by Age [18]
+ 
+    Time series AA: Persons: Male ~ Under 5 years
+        Year: 1970
+            Source dataset: 1970 Census: Count 2 - 100% Data [Tracts, Urban Areas, Metro Areas, etc.] 
+                Source table: NT2A. Sex by Age
+                    Universe: Persons
+                        Variable: [CE6001] Male >> Under 1 year
+                        Variable: [CE6002] Male >> 1 year
+                        Variable: [CE6003] Male >> 2 years
+                        Variable: [CE6004] Male >> 3 years
+                        Variable: [CE6005] Male >> 4 years
+        Year: 1980
+            Source dataset: 1980 Census: STF 1 - 100% Data
+                Source table: NT10B. Sex by Age
+                    Universe: Persons
+                        Variable: [C68001] Male >> Under 1 year
+                        Variable: [C68002] Male >> 1-2 years
+                        Variable: [C68003] Male >> 3-4 years
+        Year: 1990
+            Source dataset: 1990 Census: STF 1 - 100% Data
+                Source table: NP12. Race by Sex by Age
+                    Universe: Persons
+                        Variable: [ET4001] White >> Male >> Under 1 year
+                        Variable: [ET4002] White >> Male >> 1 and 2 years
+                        Variable: [ET4003] White >> Male >> 3 and 4 years
+                        Variable: [ET4063] Black >> Male >> Under 1 year
+                        Variable: [ET4064] Black >> Male >> 1 and 2 years
+                        Variable: [ET4065] Black >> Male >> 3 and 4 years
+                        Variable: [ET4125] American Indian, Eskimo, or Aleut >> Male >> Under 1 year
+                        Variable: [ET4126] American Indian, Eskimo, or Aleut >> Male >> 1 and 2 years
+                        Variable: [ET4127] American Indian, Eskimo, or Aleut >> Male >> 3 and 4 years
+                        Variable: [ET4187] Asian or Pacific Islander >> Male >> Under 1 year
+                        Variable: [ET4188] Asian or Pacific Islander >> Male >> 1 and 2 years
+                        Variable: [ET4189] Asian or Pacific Islander >> Male >> 3 and 4 years
+                        Variable: [ET4249] Other race >> Male >> Under 1 year
+                        Variable: [ET4250] Other race >> Male >> 1 and 2 years
+                        Variable: [ET4251] Other race >> Male >> 3 and 4 years
+        Year: 2000
+            Source dataset: 2000 Census: SF 1a - 100% Data [Areas Larger Than Block Groups]
+                Source table: NP012B. Population by Sex by Age
+                    Universe: Persons
+                        Variable: [FMZ001] Male >> Under 5 years
+        Year: 2010
+            Source dataset: 2010 Census: SF 1a - P & H Tables [Blocks & Larger Areas]
+                Source table: P12. Sex by Age
+                    Universe: Total population
+                        Variable: [H76003] Male: Under 5 years
+ 
+    Time series AB: Persons: Male ~ 5 to 9 years
+        Year: 1970
+            Source dataset: 1970 Census: Count 2 - 100% Data [Tracts, Urban Areas, Metro Areas, etc.] 
+                Source table: NT2A. Sex by Age
+                    Universe: Persons
+                        Variable: [CE6006] Male >> 5 years
+                        Variable: [CE6007] Male >> 6 years
+                        Variable: [CE6008] Male >> 7 years
+                        Variable: [CE6009] Male >> 8 years
+                        Variable: [CE6010] Male >> 9 years
+        Year: 1980
+            Source dataset: 1980 Census: STF 1 - 100% Data
+                Source table: NT10B. Sex by Age
+                    Universe: Persons
+                        Variable: [C68004] Male >> 5 years
+                        Variable: [C68005] Male >> 6 years
+                        Variable: [C68006] Male >> 7-9 years
+        Year: 1990
+            Source dataset: 1990 Census: STF 1 - 100% Data
+                Source table: NP12. Race by Sex by Age
+                    Universe: Persons
+                        Variable: [ET4004] White >> Male >> 5 years
+                        Variable: [ET4005] White >> Male >> 6 years
+                        Variable: [ET4006] White >> Male >> 7 to 9 years
+                        Variable: [ET4066] Black >> Male >> 5 years
+                        Variable: [ET4067] Black >> Male >> 6 years
+                        Variable: [ET4068] Black >> Male >> 7 to 9 years
+                        Variable: [ET4128] American Indian, Eskimo, or Aleut >> Male >> 5 years
+                        Variable: [ET4129] American Indian, Eskimo, or Aleut >> Male >> 6 years
+                        Variable: [ET4130] American Indian, Eskimo, or Aleut >> Male >> 7 to 9 years
+                        Variable: [ET4190] Asian or Pacific Islander >> Male >> 5 years
+                        Variable: [ET4191] Asian or Pacific Islander >> Male >> 6 years
+                        Variable: [ET4192] Asian or Pacific Islander >> Male >> 7 to 9 years
+                        Variable: [ET4252] Other race >> Male >> 5 years
+                        Variable: [ET4253] Other race >> Male >> 6 years
+                        Variable: [ET4254] Other race >> Male >> 7 to 9 years
+        Year: 2000
+            Source dataset: 2000 Census: SF 1a - 100% Data [Areas Larger Than Block Groups]
+                Source table: NP012B. Population by Sex by Age
+                    Universe: Persons
+                        Variable: [FMZ002] Male >> 5 to 9 years
+        Year: 2010
+            Source dataset: 2010 Census: SF 1a - P & H Tables [Blocks & Larger Areas]
+                Source table: P12. Sex by Age
+                    Universe: Total population
+                        Variable: [H76004] Male: 5 to 9 years
+ 
+    Time series AC: Persons: Male ~ 10 to 14 years
+        Year: 1970
+            Source dataset: 1970 Census: Count 2 - 100% Data [Tracts, Urban Areas, Metro Areas, etc.] 
+                Source table: NT2A. Sex by Age
+                    Universe: Persons
+                        Variable: [CE6011] Male >> 10 years
+                        Variable: [CE6012] Male >> 11 years
+                        Variable: [CE6013] Male >> 12 years
+                        Variable: [CE6014] Male >> 13 years
+                        Variable: [CE6015] Male >> 14 years
+        Year: 1980
+            Source dataset: 1980 Census: STF 1 - 100% Data
+                Source table: NT10B. Sex by Age
+                    Universe: Persons
+                        Variable: [C68007] Male >> 10-13 years
+                        Variable: [C68008] Male >> 14 years
+        Year: 1990
+            Source dataset: 1990 Census: STF 1 - 100% Data
+                Source table: NP12. Race by Sex by Age
+                    Universe: Persons
+                        Variable: [ET4007] White >> Male >> 10 and 11 years
+                        Variable: [ET4008] White >> Male >> 12 and 13 years
+                        Variable: [ET4009] White >> Male >> 14 years
+                        Variable: [ET4069] Black >> Male >> 10 and 11 years
+                        Variable: [ET4070] Black >> Male >> 12 and 13 years
+                        Variable: [ET4071] Black >> Male >> 14 years
+                        Variable: [ET4131] American Indian, Eskimo, or Aleut >> Male >> 10 and 11 years
+                        Variable: [ET4132] American Indian, Eskimo, or Aleut >> Male >> 12 and 13 years
+                        Variable: [ET4133] American Indian, Eskimo, or Aleut >> Male >> 14 years
+                        Variable: [ET4193] Asian or Pacific Islander >> Male >> 10 and 11 years
+                        Variable: [ET4194] Asian or Pacific Islander >> Male >> 12 and 13 years
+                        Variable: [ET4195] Asian or Pacific Islander >> Male >> 14 years
+                        Variable: [ET4255] Other race >> Male >> 10 and 11 years
+                        Variable: [ET4256] Other race >> Male >> 12 and 13 years
+                        Variable: [ET4257] Other race >> Male >> 14 years
+        Year: 2000
+            Source dataset: 2000 Census: SF 1a - 100% Data [Areas Larger Than Block Groups]
+                Source table: NP012B. Population by Sex by Age
+                    Universe: Persons
+                        Variable: [FMZ003] Male >> 10 to 14 years
+        Year: 2010
+            Source dataset: 2010 Census: SF 1a - P & H Tables [Blocks & Larger Areas]
+                Source table: P12. Sex by Age
+                    Universe: Total population
+                        Variable: [H76005] Male: 10 to 14 years
+ 
+    Time series AD: Persons: Male ~ 15 to 17 years
+        Year: 1970
+            Source dataset: 1970 Census: Count 2 - 100% Data [Tracts, Urban Areas, Metro Areas, etc.] 
+                Source table: NT2A. Sex by Age
+                    Universe: Persons
+                        Variable: [CE6016] Male >> 15 years
+                        Variable: [CE6017] Male >> 16 years
+                        Variable: [CE6018] Male >> 17 years
+        Year: 1980
+            Source dataset: 1980 Census: STF 1 - 100% Data
+                Source table: NT10B. Sex by Age
+                    Universe: Persons
+                        Variable: [C68009] Male >> 15 years
+                        Variable: [C68010] Male >> 16 years
+                        Variable: [C68011] Male >> 17 years
+        Year: 1990
+            Source dataset: 1990 Census: STF 1 - 100% Data
+                Source table: NP12. Race by Sex by Age
+                    Universe: Persons
+                        Variable: [ET4010] White >> Male >> 15 years
+                        Variable: [ET4011] White >> Male >> 16 years
+                        Variable: [ET4012] White >> Male >> 17 years
+                        Variable: [ET4072] Black >> Male >> 15 years
+                        Variable: [ET4073] Black >> Male >> 16 years
+                        Variable: [ET4074] Black >> Male >> 17 years
+                        Variable: [ET4134] American Indian, Eskimo, or Aleut >> Male >> 15 years
+                        Variable: [ET4135] American Indian, Eskimo, or Aleut >> Male >> 16 years
+                        Variable: [ET4136] American Indian, Eskimo, or Aleut >> Male >> 17 years
+                        Variable: [ET4196] Asian or Pacific Islander >> Male >> 15 years
+                        Variable: [ET4197] Asian or Pacific Islander >> Male >> 16 years
+                        Variable: [ET4198] Asian or Pacific Islander >> Male >> 17 years
+                        Variable: [ET4258] Other race >> Male >> 15 years
+                        Variable: [ET4259] Other race >> Male >> 16 years
+                        Variable: [ET4260] Other race >> Male >> 17 years
+        Year: 2000
+            Source dataset: 2000 Census: SF 1a - 100% Data [Areas Larger Than Block Groups]
+                Source table: NP012B. Population by Sex by Age
+                    Universe: Persons
+                        Variable: [FMZ004] Male >> 15 to 17 years
+        Year: 2010
+            Source dataset: 2010 Census: SF 1a - P & H Tables [Blocks & Larger Areas]
+                Source table: P12. Sex by Age
+                    Universe: Total population
+                        Variable: [H76006] Male: 15 to 17 years
+ 
+    Time series AE: Persons: Male ~ 18 and 19 years
+        Year: 1970
+            Source dataset: 1970 Census: Count 2 - 100% Data [Tracts, Urban Areas, Metro Areas, etc.] 
+                Source table: NT2A. Sex by Age
+                    Universe: Persons
+                        Variable: [CE6019] Male >> 18 years
+                        Variable: [CE6020] Male >> 19 years
+        Year: 1980
+            Source dataset: 1980 Census: STF 1 - 100% Data
+                Source table: NT10B. Sex by Age
+                    Universe: Persons
+                        Variable: [C68012] Male >> 18 years
+                        Variable: [C68013] Male >> 19 years
+        Year: 1990
+            Source dataset: 1990 Census: STF 1 - 100% Data
+                Source table: NP12. Race by Sex by Age
+                    Universe: Persons
+                        Variable: [ET4013] White >> Male >> 18 years
+                        Variable: [ET4014] White >> Male >> 19 years
+                        Variable: [ET4075] Black >> Male >> 18 years
+                        Variable: [ET4076] Black >> Male >> 19 years
+                        Variable: [ET4137] American Indian, Eskimo, or Aleut >> Male >> 18 years
+                        Variable: [ET4138] American Indian, Eskimo, or Aleut >> Male >> 19 years
+                        Variable: [ET4199] Asian or Pacific Islander >> Male >> 18 years
+                        Variable: [ET4200] Asian or Pacific Islander >> Male >> 19 years
+                        Variable: [ET4261] Other race >> Male >> 18 years
+                        Variable: [ET4262] Other race >> Male >> 19 years
+        Year: 2000
+            Source dataset: 2000 Census: SF 1a - 100% Data [Areas Larger Than Block Groups]
+                Source table: NP012B. Population by Sex by Age
+                    Universe: Persons
+                        Variable: [FMZ005] Male >> 18 and 19 years
+        Year: 2010
+            Source dataset: 2010 Census: SF 1a - P & H Tables [Blocks & Larger Areas]
+                Source table: P12. Sex by Age
+                    Universe: Total population
+                        Variable: [H76007] Male: 18 and 19 years
+ 
+    Time series AF: Persons: Male ~ 20 years
+        Year: 1970
+            Source dataset: 1970 Census: Count 2 - 100% Data [Tracts, Urban Areas, Metro Areas, etc.] 
+                Source table: NT2A. Sex by Age
+                    Universe: Persons
+                        Variable: [CE6021] Male >> 20 years
+        Year: 1980
+            Source dataset: 1980 Census: STF 1 - 100% Data
+                Source table: NT10B. Sex by Age
+                    Universe: Persons
+                        Variable: [C68014] Male >> 20 years
+        Year: 1990
+            Source dataset: 1990 Census: STF 1 - 100% Data
+                Source table: NP12. Race by Sex by Age
+                    Universe: Persons
+                        Variable: [ET4015] White >> Male >> 20 years
+                        Variable: [ET4077] Black >> Male >> 20 years
+                        Variable: [ET4139] American Indian, Eskimo, or Aleut >> Male >> 20 years
+                        Variable: [ET4201] Asian or Pacific Islander >> Male >> 20 years
+                        Variable: [ET4263] Other race >> Male >> 20 years
+        Year: 2000
+            Source dataset: 2000 Census: SF 1a - 100% Data [Areas Larger Than Block Groups]
+                Source table: NP012B. Population by Sex by Age
+                    Universe: Persons
+                        Variable: [FMZ006] Male >> 20 years
+        Year: 2010
+            Source dataset: 2010 Census: SF 1a - P & H Tables [Blocks & Larger Areas]
+                Source table: P12. Sex by Age
+                    Universe: Total population
+                        Variable: [H76008] Male: 20 years
+ 
+    Time series AG: Persons: Male ~ 21 years
+        Year: 1970
+            Source dataset: 1970 Census: Count 2 - 100% Data [Tracts, Urban Areas, Metro Areas, etc.] 
+                Source table: NT2A. Sex by Age
+                    Universe: Persons
+                        Variable: [CE6022] Male >> 21 years
+        Year: 1980
+            Source dataset: 1980 Census: STF 1 - 100% Data
+                Source table: NT10B. Sex by Age
+                    Universe: Persons
+                        Variable: [C68015] Male >> 21 years
+        Year: 1990
+            Source dataset: 1990 Census: STF 1 - 100% Data
+                Source table: NP12. Race by Sex by Age
+                    Universe: Persons
+                        Variable: [ET4016] White >> Male >> 21 years
+                        Variable: [ET4078] Black >> Male >> 21 years
+                        Variable: [ET4140] American Indian, Eskimo, or Aleut >> Male >> 21 years
+                        Variable: [ET4202] Asian or Pacific Islander >> Male >> 21 years
+                        Variable: [ET4264] Other race >> Male >> 21 years
+        Year: 2000
+            Source dataset: 2000 Census: SF 1a - 100% Data [Areas Larger Than Block Groups]
+                Source table: NP012B. Population by Sex by Age
+                    Universe: Persons
+                        Variable: [FMZ007] Male >> 21 years
+        Year: 2010
+            Source dataset: 2010 Census: SF 1a - P & H Tables [Blocks & Larger Areas]
+                Source table: P12. Sex by Age
+                    Universe: Total population
+                        Variable: [H76009] Male: 21 years
+ 
+    Time series AH: Persons: Male ~ 22 to 24 years
+        Year: 1970
+            Source dataset: 1970 Census: Count 2 - 100% Data [Tracts, Urban Areas, Metro Areas, etc.] 
+                Source table: NT2A. Sex by Age
+                    Universe: Persons
+                        Variable: [CE6023] Male >> 22 years
+                        Variable: [CE6024] Male >> 23 years
+                        Variable: [CE6025] Male >> 24 years
+        Year: 1980
+            Source dataset: 1980 Census: STF 1 - 100% Data
+                Source table: NT10B. Sex by Age
+                    Universe: Persons
+                        Variable: [C68016] Male >> 22-24 years
+        Year: 1990
+            Source dataset: 1990 Census: STF 1 - 100% Data
+                Source table: NP12. Race by Sex by Age
+                    Universe: Persons
+                        Variable: [ET4017] White >> Male >> 22 to 24 years
+                        Variable: [ET4079] Black >> Male >> 22 to 24 years
+                        Variable: [ET4141] American Indian, Eskimo, or Aleut >> Male >> 22 to 24 years
+                        Variable: [ET4203] Asian or Pacific Islander >> Male >> 22 to 24 years
+                        Variable: [ET4265] Other race >> Male >> 22 to 24 years
+        Year: 2000
+            Source dataset: 2000 Census: SF 1a - 100% Data [Areas Larger Than Block Groups]
+                Source table: NP012B. Population by Sex by Age
+                    Universe: Persons
+                        Variable: [FMZ008] Male >> 22 to 24 years
+        Year: 2010
+            Source dataset: 2010 Census: SF 1a - P & H Tables [Blocks & Larger Areas]
+                Source table: P12. Sex by Age
+                    Universe: Total population
+                        Variable: [H76010] Male: 22 to 24 years
+ 
+    Time series AI: Persons: Male ~ 25 to 29 years
+        Year: 1970
+            Source dataset: 1970 Census: Count 2 - 100% Data [Tracts, Urban Areas, Metro Areas, etc.] 
+                Source table: NT2A. Sex by Age
+                    Universe: Persons
+                        Variable: [CE6026] Male >> 25 years
+                        Variable: [CE6027] Male >> 26 years
+                        Variable: [CE6028] Male >> 27 years
+                        Variable: [CE6029] Male >> 28 years
+                        Variable: [CE6030] Male >> 29 years
+        Year: 1980
+            Source dataset: 1980 Census: STF 1 - 100% Data
+                Source table: NT10B. Sex by Age
+                    Universe: Persons
+                        Variable: [C68017] Male >> 25-29 years
+        Year: 1990
+            Source dataset: 1990 Census: STF 1 - 100% Data
+                Source table: NP12. Race by Sex by Age
+                    Universe: Persons
+                        Variable: [ET4018] White >> Male >> 25 to 29 years
+                        Variable: [ET4080] Black >> Male >> 25 to 29 years
+                        Variable: [ET4142] American Indian, Eskimo, or Aleut >> Male >> 25 to 29 years
+                        Variable: [ET4204] Asian or Pacific Islander >> Male >> 25 to 29 years
+                        Variable: [ET4266] Other race >> Male >> 25 to 29 years
+        Year: 2000
+            Source dataset: 2000 Census: SF 1a - 100% Data [Areas Larger Than Block Groups]
+                Source table: NP012B. Population by Sex by Age
+                    Universe: Persons
+                        Variable: [FMZ009] Male >> 25 to 29 years
+        Year: 2010
+            Source dataset: 2010 Census: SF 1a - P & H Tables [Blocks & Larger Areas]
+                Source table: P12. Sex by Age
+                    Universe: Total population
+                        Variable: [H76011] Male: 25 to 29 years
+ 
+    Time series AJ: Persons: Male ~ 30 to 34 years
+        Year: 1970
+            Source dataset: 1970 Census: Count 2 - 100% Data [Tracts, Urban Areas, Metro Areas, etc.] 
+                Source table: NT2A. Sex by Age
+                    Universe: Persons
+                        Variable: [CE6031] Male >> 30 years
+                        Variable: [CE6032] Male >> 31 years
+                        Variable: [CE6033] Male >> 32 years
+                        Variable: [CE6034] Male >> 33 years
+                        Variable: [CE6035] Male >> 34 years
+        Year: 1980
+            Source dataset: 1980 Census: STF 1 - 100% Data
+                Source table: NT10B. Sex by Age
+                    Universe: Persons
+                        Variable: [C68018] Male >> 30-34 years
+        Year: 1990
+            Source dataset: 1990 Census: STF 1 - 100% Data
+                Source table: NP12. Race by Sex by Age
+                    Universe: Persons
+                        Variable: [ET4019] White >> Male >> 30 to 34 years
+                        Variable: [ET4081] Black >> Male >> 30 to 34 years
+                        Variable: [ET4143] American Indian, Eskimo, or Aleut >> Male >> 30 to 34 years
+                        Variable: [ET4205] Asian or Pacific Islander >> Male >> 30 to 34 years
+                        Variable: [ET4267] Other race >> Male >> 30 to 34 years
+        Year: 2000
+            Source dataset: 2000 Census: SF 1a - 100% Data [Areas Larger Than Block Groups]
+                Source table: NP012B. Population by Sex by Age
+                    Universe: Persons
+                        Variable: [FMZ010] Male >> 30 to 34 years
+        Year: 2010
+            Source dataset: 2010 Census: SF 1a - P & H Tables [Blocks & Larger Areas]
+                Source table: P12. Sex by Age
+                    Universe: Total population
+                        Variable: [H76012] Male: 30 to 34 years
+ 
+    Time series AK: Persons: Male ~ 35 to 44 years
+        Year: 1970
+            Source dataset: 1970 Census: Count 2 - 100% Data [Tracts, Urban Areas, Metro Areas, etc.] 
+                Source table: NT2A. Sex by Age
+                    Universe: Persons
+                        Variable: [CE6036] Male >> 35 years
+                        Variable: [CE6037] Male >> 36 years
+                        Variable: [CE6038] Male >> 37 years
+                        Variable: [CE6039] Male >> 38 years
+                        Variable: [CE6040] Male >> 39 years
+                        Variable: [CE6041] Male >> 40 years
+                        Variable: [CE6042] Male >> 41 years
+                        Variable: [CE6043] Male >> 42 years
+                        Variable: [CE6044] Male >> 43 years
+                        Variable: [CE6045] Male >> 44 years
+        Year: 1980
+            Source dataset: 1980 Census: STF 1 - 100% Data
+                Source table: NT10B. Sex by Age
+                    Universe: Persons
+                        Variable: [C68019] Male >> 35-44 years
+        Year: 1990
+            Source dataset: 1990 Census: STF 1 - 100% Data
+                Source table: NP12. Race by Sex by Age
+                    Universe: Persons
+                        Variable: [ET4020] White >> Male >> 35 to 39 years
+                        Variable: [ET4021] White >> Male >> 40 to 44 years
+                        Variable: [ET4082] Black >> Male >> 35 to 39 years
+                        Variable: [ET4083] Black >> Male >> 40 to 44 years
+                        Variable: [ET4144] American Indian, Eskimo, or Aleut >> Male >> 35 to 39 years
+                        Variable: [ET4145] American Indian, Eskimo, or Aleut >> Male >> 40 to 44 years
+                        Variable: [ET4206] Asian or Pacific Islander >> Male >> 35 to 39 years
+                        Variable: [ET4207] Asian or Pacific Islander >> Male >> 40 to 44 years
+                        Variable: [ET4268] Other race >> Male >> 35 to 39 years
+                        Variable: [ET4269] Other race >> Male >> 40 to 44 years
+        Year: 2000
+            Source dataset: 2000 Census: SF 1a - 100% Data [Areas Larger Than Block Groups]
+                Source table: NP012B. Population by Sex by Age
+                    Universe: Persons
+                        Variable: [FMZ011] Male >> 35 to 39 years
+                        Variable: [FMZ012] Male >> 40 to 44 years
+        Year: 2010
+            Source dataset: 2010 Census: SF 1a - P & H Tables [Blocks & Larger Areas]
+                Source table: P12. Sex by Age
+                    Universe: Total population
+                        Variable: [H76013] Male: 35 to 39 years
+                        Variable: [H76014] Male: 40 to 44 years
+ 
+    Time series AL: Persons: Male ~ 45 to 54 years
+        Year: 1970
+            Source dataset: 1970 Census: Count 2 - 100% Data [Tracts, Urban Areas, Metro Areas, etc.] 
+                Source table: NT2A. Sex by Age
+                    Universe: Persons
+                        Variable: [CE6046] Male >> 45 years
+                        Variable: [CE6047] Male >> 46 years
+                        Variable: [CE6048] Male >> 47 years
+                        Variable: [CE6049] Male >> 48 years
+                        Variable: [CE6050] Male >> 49 years
+                        Variable: [CE6051] Male >> 50 years
+                        Variable: [CE6052] Male >> 51 years
+                        Variable: [CE6053] Male >> 52 years
+                        Variable: [CE6054] Male >> 53 years
+                        Variable: [CE6055] Male >> 54 years
+        Year: 1980
+            Source dataset: 1980 Census: STF 1 - 100% Data
+                Source table: NT10B. Sex by Age
+                    Universe: Persons
+                        Variable: [C68020] Male >> 45-54 years
+        Year: 1990
+            Source dataset: 1990 Census: STF 1 - 100% Data
+                Source table: NP12. Race by Sex by Age
+                    Universe: Persons
+                        Variable: [ET4022] White >> Male >> 45 to 49 years
+                        Variable: [ET4023] White >> Male >> 50 to 54 years
+                        Variable: [ET4084] Black >> Male >> 45 to 49 years
+                        Variable: [ET4085] Black >> Male >> 50 to 54 years
+                        Variable: [ET4146] American Indian, Eskimo, or Aleut >> Male >> 45 to 49 years
+                        Variable: [ET4147] American Indian, Eskimo, or Aleut >> Male >> 50 to 54 years
+                        Variable: [ET4208] Asian or Pacific Islander >> Male >> 45 to 49 years
+                        Variable: [ET4209] Asian or Pacific Islander >> Male >> 50 to 54 years
+                        Variable: [ET4270] Other race >> Male >> 45 to 49 years
+                        Variable: [ET4271] Other race >> Male >> 50 to 54 years
+        Year: 2000
+            Source dataset: 2000 Census: SF 1a - 100% Data [Areas Larger Than Block Groups]
+                Source table: NP012B. Population by Sex by Age
+                    Universe: Persons
+                        Variable: [FMZ013] Male >> 45 to 49 years
+                        Variable: [FMZ014] Male >> 50 to 54 years
+        Year: 2010
+            Source dataset: 2010 Census: SF 1a - P & H Tables [Blocks & Larger Areas]
+                Source table: P12. Sex by Age
+                    Universe: Total population
+                        Variable: [H76015] Male: 45 to 49 years
+                        Variable: [H76016] Male: 50 to 54 years
+ 
+    Time series AM: Persons: Male ~ 55 to 59 years
+        Year: 1970
+            Source dataset: 1970 Census: Count 2 - 100% Data [Tracts, Urban Areas, Metro Areas, etc.] 
+                Source table: NT2A. Sex by Age
+                    Universe: Persons
+                        Variable: [CE6056] Male >> 55 years
+                        Variable: [CE6057] Male >> 56 years
+                        Variable: [CE6058] Male >> 57 years
+                        Variable: [CE6059] Male >> 58 years
+                        Variable: [CE6060] Male >> 59 years
+        Year: 1980
+            Source dataset: 1980 Census: STF 1 - 100% Data
+                Source table: NT10B. Sex by Age
+                    Universe: Persons
+                        Variable: [C68021] Male >> 55-59 years
+        Year: 1990
+            Source dataset: 1990 Census: STF 1 - 100% Data
+                Source table: NP12. Race by Sex by Age
+                    Universe: Persons
+                        Variable: [ET4024] White >> Male >> 55 to 59 years
+                        Variable: [ET4086] Black >> Male >> 55 to 59 years
+                        Variable: [ET4148] American Indian, Eskimo, or Aleut >> Male >> 55 to 59 years
+                        Variable: [ET4210] Asian or Pacific Islander >> Male >> 55 to 59 years
+                        Variable: [ET4272] Other race >> Male >> 55 to 59 years
+        Year: 2000
+            Source dataset: 2000 Census: SF 1a - 100% Data [Areas Larger Than Block Groups]
+                Source table: NP012B. Population by Sex by Age
+                    Universe: Persons
+                        Variable: [FMZ015] Male >> 55 to 59 years
+        Year: 2010
+            Source dataset: 2010 Census: SF 1a - P & H Tables [Blocks & Larger Areas]
+                Source table: P12. Sex by Age
+                    Universe: Total population
+                        Variable: [H76017] Male: 55 to 59 years
+ 
+    Time series AN: Persons: Male ~ 60 and 61 years
+        Year: 1970
+            Source dataset: 1970 Census: Count 2 - 100% Data [Tracts, Urban Areas, Metro Areas, etc.] 
+                Source table: NT2A. Sex by Age
+                    Universe: Persons
+                        Variable: [CE6061] Male >> 60 years
+                        Variable: [CE6062] Male >> 61 years
+        Year: 1980
+            Source dataset: 1980 Census: STF 1 - 100% Data
+                Source table: NT10B. Sex by Age
+                    Universe: Persons
+                        Variable: [C68022] Male >> 60-61 years
+        Year: 1990
+            Source dataset: 1990 Census: STF 1 - 100% Data
+                Source table: NP12. Race by Sex by Age
+                    Universe: Persons
+                        Variable: [ET4025] White >> Male >> 60 and 61 years
+                        Variable: [ET4087] Black >> Male >> 60 and 61 years
+                        Variable: [ET4149] American Indian, Eskimo, or Aleut >> Male >> 60 and 61 years
+                        Variable: [ET4211] Asian or Pacific Islander >> Male >> 60 and 61 years
+                        Variable: [ET4273] Other race >> Male >> 60 and 61 years
+        Year: 2000
+            Source dataset: 2000 Census: SF 1a - 100% Data [Areas Larger Than Block Groups]
+                Source table: NP012B. Population by Sex by Age
+                    Universe: Persons
+                        Variable: [FMZ016] Male >> 60 and 61 years
+        Year: 2010
+            Source dataset: 2010 Census: SF 1a - P & H Tables [Blocks & Larger Areas]
+                Source table: P12. Sex by Age
+                    Universe: Total population
+                        Variable: [H76018] Male: 60 and 61 years
+ 
+    Time series AO: Persons: Male ~ 62 to 64 years
+        Year: 1970
+            Source dataset: 1970 Census: Count 2 - 100% Data [Tracts, Urban Areas, Metro Areas, etc.] 
+                Source table: NT2A. Sex by Age
+                    Universe: Persons
+                        Variable: [CE6063] Male >> 62 years
+                        Variable: [CE6064] Male >> 63 years
+                        Variable: [CE6065] Male >> 64 years
+        Year: 1980
+            Source dataset: 1980 Census: STF 1 - 100% Data
+                Source table: NT10B. Sex by Age
+                    Universe: Persons
+                        Variable: [C68023] Male >> 62-64 years
+        Year: 1990
+            Source dataset: 1990 Census: STF 1 - 100% Data
+                Source table: NP12. Race by Sex by Age
+                    Universe: Persons
+                        Variable: [ET4026] White >> Male >> 62 to 64 years
+                        Variable: [ET4088] Black >> Male >> 62 to 64 years
+                        Variable: [ET4150] American Indian, Eskimo, or Aleut >> Male >> 62 to 64 years
+                        Variable: [ET4212] Asian or Pacific Islander >> Male >> 62 to 64 years
+                        Variable: [ET4274] Other race >> Male >> 62 to 64 years
+        Year: 2000
+            Source dataset: 2000 Census: SF 1a - 100% Data [Areas Larger Than Block Groups]
+                Source table: NP012B. Population by Sex by Age
+                    Universe: Persons
+                        Variable: [FMZ017] Male >> 62 to 64 years
+        Year: 2010
+            Source dataset: 2010 Census: SF 1a - P & H Tables [Blocks & Larger Areas]
+                Source table: P12. Sex by Age
+                    Universe: Total population
+                        Variable: [H76019] Male: 62 to 64 years
+ 
+    Time series AP: Persons: Male ~ 65 to 74 years
+        Year: 1970
+            Source dataset: 1970 Census: Count 2 - 100% Data [Tracts, Urban Areas, Metro Areas, etc.] 
+                Source table: NT2A. Sex by Age
+                    Universe: Persons
+                        Variable: [CE6066] Male >> 65 years
+                        Variable: [CE6067] Male >> 66 years
+                        Variable: [CE6068] Male >> 67 years
+                        Variable: [CE6069] Male >> 68 years
+                        Variable: [CE6070] Male >> 69 years
+                        Variable: [CE6071] Male >> 70 years
+                        Variable: [CE6072] Male >> 71 years
+                        Variable: [CE6073] Male >> 72 years
+                        Variable: [CE6074] Male >> 73 years
+                        Variable: [CE6075] Male >> 74 years
+        Year: 1980
+            Source dataset: 1980 Census: STF 1 - 100% Data
+                Source table: NT10B. Sex by Age
+                    Universe: Persons
+                        Variable: [C68024] Male >> 65-74 years
+        Year: 1990
+            Source dataset: 1990 Census: STF 1 - 100% Data
+                Source table: NP12. Race by Sex by Age
+                    Universe: Persons
+                        Variable: [ET4027] White >> Male >> 65 to 69 years
+                        Variable: [ET4028] White >> Male >> 70 to 74 years
+                        Variable: [ET4089] Black >> Male >> 65 to 69 years
+                        Variable: [ET4090] Black >> Male >> 70 to 74 years
+                        Variable: [ET4151] American Indian, Eskimo, or Aleut >> Male >> 65 to 69 years
+                        Variable: [ET4152] American Indian, Eskimo, or Aleut >> Male >> 70 to 74 years
+                        Variable: [ET4213] Asian or Pacific Islander >> Male >> 65 to 69 years
+                        Variable: [ET4214] Asian or Pacific Islander >> Male >> 70 to 74 years
+                        Variable: [ET4275] Other race >> Male >> 65 to 69 years
+                        Variable: [ET4276] Other race >> Male >> 70 to 74 years
+        Year: 2000
+            Source dataset: 2000 Census: SF 1a - 100% Data [Areas Larger Than Block Groups]
+                Source table: NP012B. Population by Sex by Age
+                    Universe: Persons
+                        Variable: [FMZ018] Male >> 65 and 66 years
+                        Variable: [FMZ019] Male >> 67 to 69 years
+                        Variable: [FMZ020] Male >> 70 to 74 years
+        Year: 2010
+            Source dataset: 2010 Census: SF 1a - P & H Tables [Blocks & Larger Areas]
+                Source table: P12. Sex by Age
+                    Universe: Total population
+                        Variable: [H76020] Male: 65 and 66 years
+                        Variable: [H76021] Male: 67 to 69 years
+                        Variable: [H76022] Male: 70 to 74 years
+ 
+    Time series AQ: Persons: Male ~ 75 to 84 years
+        Year: 1970
+            Source dataset: 1970 Census: Count 2 - 100% Data [Tracts, Urban Areas, Metro Areas, etc.] 
+                Source table: NT2A. Sex by Age
+                    Universe: Persons
+                        Variable: [CE6076] Male >> 75 years
+                        Variable: [CE6077] Male >> 76 years
+                        Variable: [CE6078] Male >> 77 years
+                        Variable: [CE6079] Male >> 78 years
+                        Variable: [CE6080] Male >> 79 years
+                        Variable: [CE6081] Male >> 80 years
+                        Variable: [CE6082] Male >> 81 years
+                        Variable: [CE6083] Male >> 82 years
+                        Variable: [CE6084] Male >> 83 years
+                        Variable: [CE6085] Male >> 84 years
+        Year: 1980
+            Source dataset: 1980 Census: STF 1 - 100% Data
+                Source table: NT10B. Sex by Age
+                    Universe: Persons
+                        Variable: [C68025] Male >> 75-84 years
+        Year: 1990
+            Source dataset: 1990 Census: STF 1 - 100% Data
+                Source table: NP12. Race by Sex by Age
+                    Universe: Persons
+                        Variable: [ET4029] White >> Male >> 75 to 79 years
+                        Variable: [ET4030] White >> Male >> 80 to 84 years
+                        Variable: [ET4091] Black >> Male >> 75 to 79 years
+                        Variable: [ET4092] Black >> Male >> 80 to 84 years
+                        Variable: [ET4153] American Indian, Eskimo, or Aleut >> Male >> 75 to 79 years
+                        Variable: [ET4154] American Indian, Eskimo, or Aleut >> Male >> 80 to 84 years
+                        Variable: [ET4215] Asian or Pacific Islander >> Male >> 75 to 79 years
+                        Variable: [ET4216] Asian or Pacific Islander >> Male >> 80 to 84 years
+                        Variable: [ET4277] Other race >> Male >> 75 to 79 years
+                        Variable: [ET4278] Other race >> Male >> 80 to 84 years
+        Year: 2000
+            Source dataset: 2000 Census: SF 1a - 100% Data [Areas Larger Than Block Groups]
+                Source table: NP012B. Population by Sex by Age
+                    Universe: Persons
+                        Variable: [FMZ021] Male >> 75 to 79 years
+                        Variable: [FMZ022] Male >> 80 to 84 years
+        Year: 2010
+            Source dataset: 2010 Census: SF 1a - P & H Tables [Blocks & Larger Areas]
+                Source table: P12. Sex by Age
+                    Universe: Total population
+                        Variable: [H76023] Male: 75 to 79 years
+                        Variable: [H76024] Male: 80 to 84 years
+ 
+    Time series AR: Persons: Male ~ 85 years and over
+        Year: 1970
+            Source dataset: 1970 Census: Count 2 - 100% Data [Tracts, Urban Areas, Metro Areas, etc.] 
+                Source table: NT2A. Sex by Age
+                    Universe: Persons
+                        Variable: [CE6086] Male >> 85 years
+                        Variable: [CE6087] Male >> 86 years
+                        Variable: [CE6088] Male >> 87 years
+                        Variable: [CE6089] Male >> 88 years
+                        Variable: [CE6090] Male >> 89 years
+                        Variable: [CE6091] Male >> 90 years
+                        Variable: [CE6092] Male >> 91 years
+                        Variable: [CE6093] Male >> 92 years
+                        Variable: [CE6094] Male >> 93 years
+                        Variable: [CE6095] Male >> 94 years
+                        Variable: [CE6096] Male >> 95 years
+                        Variable: [CE6097] Male >> 96 years
+                        Variable: [CE6098] Male >> 97 years
+                        Variable: [CE6099] Male >> 98 years
+                        Variable: [CE6100] Male >> 99 years
+                        Variable: [CE6101] Male >> 100 years and over
+        Year: 1980
+            Source dataset: 1980 Census: STF 1 - 100% Data
+                Source table: NT10B. Sex by Age
+                    Universe: Persons
+                        Variable: [C68026] Male >> 85 years and over
+        Year: 1990
+            Source dataset: 1990 Census: STF 1 - 100% Data
+                Source table: NP12. Race by Sex by Age
+                    Universe: Persons
+                        Variable: [ET4031] White >> Male >> 85 years and over
+                        Variable: [ET4093] Black >> Male >> 85 years and over
+                        Variable: [ET4155] American Indian, Eskimo, or Aleut >> Male >> 85 years and over
+                        Variable: [ET4217] Asian or Pacific Islander >> Male >> 85 years and over
+                        Variable: [ET4279] Other race >> Male >> 85 years and over
+        Year: 2000
+            Source dataset: 2000 Census: SF 1a - 100% Data [Areas Larger Than Block Groups]
+                Source table: NP012B. Population by Sex by Age
+                    Universe: Persons
+                        Variable: [FMZ023] Male >> 85 years and over
+        Year: 2010
+            Source dataset: 2010 Census: SF 1a - P & H Tables [Blocks & Larger Areas]
+                Source table: P12. Sex by Age
+                    Universe: Total population
+                        Variable: [H76025] Male: 85 years and over
+ 
+    Time series AS: Persons: Female ~ Under 5 years
+        Year: 1970
+            Source dataset: 1970 Census: Count 2 - 100% Data [Tracts, Urban Areas, Metro Areas, etc.] 
+                Source table: NT2A. Sex by Age
+                    Universe: Persons
+                        Variable: [CE6102] Female >> Under 1 year
+                        Variable: [CE6103] Female >> 1 year
+                        Variable: [CE6104] Female >> 2 years
+                        Variable: [CE6105] Female >> 3 years
+                        Variable: [CE6106] Female >> 4 years
+        Year: 1980
+            Source dataset: 1980 Census: STF 1 - 100% Data
+                Source table: NT10B. Sex by Age
+                    Universe: Persons
+                        Variable: [C68027] Female >> Under 1 year
+                        Variable: [C68028] Female >> 1-2 years
+                        Variable: [C68029] Female >> 3-4 years
+        Year: 1990
+            Source dataset: 1990 Census: STF 1 - 100% Data
+                Source table: NP12. Race by Sex by Age
+                    Universe: Persons
+                        Variable: [ET4032] White >> Female >> Under 1 year
+                        Variable: [ET4033] White >> Female >> 1 and 2 years
+                        Variable: [ET4034] White >> Female >> 3 and 4 years
+                        Variable: [ET4094] Black >> Female >> Under 1 year
+                        Variable: [ET4095] Black >> Female >> 1 and 2 years
+                        Variable: [ET4096] Black >> Female >> 3 and 4 years
+                        Variable: [ET4156] American Indian, Eskimo, or Aleut >> Female >> Under 1 year
+                        Variable: [ET4157] American Indian, Eskimo, or Aleut >> Female >> 1 and 2 years
+                        Variable: [ET4158] American Indian, Eskimo, or Aleut >> Female >> 3 and 4 years
+                        Variable: [ET4218] Asian or Pacific Islander >> Female >> Under 1 year
+                        Variable: [ET4219] Asian or Pacific Islander >> Female >> 1 and 2 years
+                        Variable: [ET4220] Asian or Pacific Islander >> Female >> 3 and 4 years
+                        Variable: [ET4280] Other race >> Female >> Under 1 year
+                        Variable: [ET4281] Other race >> Female >> 1 and 2 years
+                        Variable: [ET4282] Other race >> Female >> 3 and 4 years
+        Year: 2000
+            Source dataset: 2000 Census: SF 1a - 100% Data [Areas Larger Than Block Groups]
+                Source table: NP012B. Population by Sex by Age
+                    Universe: Persons
+                        Variable: [FMZ024] Female >> Under 5 years
+        Year: 2010
+            Source dataset: 2010 Census: SF 1a - P & H Tables [Blocks & Larger Areas]
+                Source table: P12. Sex by Age
+                    Universe: Total population
+                        Variable: [H76027] Female: Under 5 years
+ 
+    Time series AT: Persons: Female ~ 5 to 9 years
+        Year: 1970
+            Source dataset: 1970 Census: Count 2 - 100% Data [Tracts, Urban Areas, Metro Areas, etc.] 
+                Source table: NT2A. Sex by Age
+                    Universe: Persons
+                        Variable: [CE6107] Female >> 5 years
+                        Variable: [CE6108] Female >> 6 years
+                        Variable: [CE6109] Female >> 7 years
+                        Variable: [CE6110] Female >> 8 years
+                        Variable: [CE6111] Female >> 9 years
+        Year: 1980
+            Source dataset: 1980 Census: STF 1 - 100% Data
+                Source table: NT10B. Sex by Age
+                    Universe: Persons
+                        Variable: [C68030] Female >> 5 years
+                        Variable: [C68031] Female >> 6 years
+                        Variable: [C68032] Female >> 7-9 years
+        Year: 1990
+            Source dataset: 1990 Census: STF 1 - 100% Data
+                Source table: NP12. Race by Sex by Age
+                    Universe: Persons
+                        Variable: [ET4035] White >> Female >> 5 years
+                        Variable: [ET4036] White >> Female >> 6 years
+                        Variable: [ET4037] White >> Female >> 7 to 9 years
+                        Variable: [ET4097] Black >> Female >> 5 years
+                        Variable: [ET4098] Black >> Female >> 6 years
+                        Variable: [ET4099] Black >> Female >> 7 to 9 years
+                        Variable: [ET4159] American Indian, Eskimo, or Aleut >> Female >> 5 years
+                        Variable: [ET4160] American Indian, Eskimo, or Aleut >> Female >> 6 years
+                        Variable: [ET4161] American Indian, Eskimo, or Aleut >> Female >> 7 to 9 years
+                        Variable: [ET4221] Asian or Pacific Islander >> Female >> 5 years
+                        Variable: [ET4222] Asian or Pacific Islander >> Female >> 6 years
+                        Variable: [ET4223] Asian or Pacific Islander >> Female >> 7 to 9 years
+                        Variable: [ET4283] Other race >> Female >> 5 years
+                        Variable: [ET4284] Other race >> Female >> 6 years
+                        Variable: [ET4285] Other race >> Female >> 7 to 9 years
+        Year: 2000
+            Source dataset: 2000 Census: SF 1a - 100% Data [Areas Larger Than Block Groups]
+                Source table: NP012B. Population by Sex by Age
+                    Universe: Persons
+                        Variable: [FMZ025] Female >> 5 to 9 years
+        Year: 2010
+            Source dataset: 2010 Census: SF 1a - P & H Tables [Blocks & Larger Areas]
+                Source table: P12. Sex by Age
+                    Universe: Total population
+                        Variable: [H76028] Female: 5 to 9 years
+ 
+    Time series AU: Persons: Female ~ 10 to 14 years
+        Year: 1970
+            Source dataset: 1970 Census: Count 2 - 100% Data [Tracts, Urban Areas, Metro Areas, etc.] 
+                Source table: NT2A. Sex by Age
+                    Universe: Persons
+                        Variable: [CE6112] Female >> 10 years
+                        Variable: [CE6113] Female >> 11 years
+                        Variable: [CE6114] Female >> 12 years
+                        Variable: [CE6115] Female >> 13 years
+                        Variable: [CE6116] Female >> 14 years
+        Year: 1980
+            Source dataset: 1980 Census: STF 1 - 100% Data
+                Source table: NT10B. Sex by Age
+                    Universe: Persons
+                        Variable: [C68033] Female >> 10-13 years
+                        Variable: [C68034] Female >> 14 years
+        Year: 1990
+            Source dataset: 1990 Census: STF 1 - 100% Data
+                Source table: NP12. Race by Sex by Age
+                    Universe: Persons
+                        Variable: [ET4038] White >> Female >> 10 and 11 years
+                        Variable: [ET4039] White >> Female >> 12 and 13 years
+                        Variable: [ET4040] White >> Female >> 14 years
+                        Variable: [ET4100] Black >> Female >> 10 and 11 years
+                        Variable: [ET4101] Black >> Female >> 12 and 13 years
+                        Variable: [ET4102] Black >> Female >> 14 years
+                        Variable: [ET4162] American Indian, Eskimo, or Aleut >> Female >> 10 and 11 years
+                        Variable: [ET4163] American Indian, Eskimo, or Aleut >> Female >> 12 and 13 years
+                        Variable: [ET4164] American Indian, Eskimo, or Aleut >> Female >> 14 years
+                        Variable: [ET4224] Asian or Pacific Islander >> Female >> 10 and 11 years
+                        Variable: [ET4225] Asian or Pacific Islander >> Female >> 12 and 13 years
+                        Variable: [ET4226] Asian or Pacific Islander >> Female >> 14 years
+                        Variable: [ET4286] Other race >> Female >> 10 and 11 years
+                        Variable: [ET4287] Other race >> Female >> 12 and 13 years
+                        Variable: [ET4288] Other race >> Female >> 14 years
+        Year: 2000
+            Source dataset: 2000 Census: SF 1a - 100% Data [Areas Larger Than Block Groups]
+                Source table: NP012B. Population by Sex by Age
+                    Universe: Persons
+                        Variable: [FMZ026] Female >> 10 to 14 years
+        Year: 2010
+            Source dataset: 2010 Census: SF 1a - P & H Tables [Blocks & Larger Areas]
+                Source table: P12. Sex by Age
+                    Universe: Total population
+                        Variable: [H76029] Female: 10 to 14 years
+ 
+    Time series AV: Persons: Female ~ 15 to 17 years
+        Year: 1970
+            Source dataset: 1970 Census: Count 2 - 100% Data [Tracts, Urban Areas, Metro Areas, etc.] 
+                Source table: NT2A. Sex by Age
+                    Universe: Persons
+                        Variable: [CE6117] Female >> 15 years
+                        Variable: [CE6118] Female >> 16 years
+                        Variable: [CE6119] Female >> 17 years
+        Year: 1980
+            Source dataset: 1980 Census: STF 1 - 100% Data
+                Source table: NT10B. Sex by Age
+                    Universe: Persons
+                        Variable: [C68035] Female >> 15 years
+                        Variable: [C68036] Female >> 16 years
+                        Variable: [C68037] Female >> 17 years
+        Year: 1990
+            Source dataset: 1990 Census: STF 1 - 100% Data
+                Source table: NP12. Race by Sex by Age
+                    Universe: Persons
+                        Variable: [ET4041] White >> Female >> 15 years
+                        Variable: [ET4042] White >> Female >> 16 years
+                        Variable: [ET4043] White >> Female >> 17 years
+                        Variable: [ET4103] Black >> Female >> 15 years
+                        Variable: [ET4104] Black >> Female >> 16 years
+                        Variable: [ET4105] Black >> Female >> 17 years
+                        Variable: [ET4165] American Indian, Eskimo, or Aleut >> Female >> 15 years
+                        Variable: [ET4166] American Indian, Eskimo, or Aleut >> Female >> 16 years
+                        Variable: [ET4167] American Indian, Eskimo, or Aleut >> Female >> 17 years
+                        Variable: [ET4227] Asian or Pacific Islander >> Female >> 15 years
+                        Variable: [ET4228] Asian or Pacific Islander >> Female >> 16 years
+                        Variable: [ET4229] Asian or Pacific Islander >> Female >> 17 years
+                        Variable: [ET4289] Other race >> Female >> 15 years
+                        Variable: [ET4290] Other race >> Female >> 16 years
+                        Variable: [ET4291] Other race >> Female >> 17 years
+        Year: 2000
+            Source dataset: 2000 Census: SF 1a - 100% Data [Areas Larger Than Block Groups]
+                Source table: NP012B. Population by Sex by Age
+                    Universe: Persons
+                        Variable: [FMZ027] Female >> 15 to 17 years
+        Year: 2010
+            Source dataset: 2010 Census: SF 1a - P & H Tables [Blocks & Larger Areas]
+                Source table: P12. Sex by Age
+                    Universe: Total population
+                        Variable: [H76030] Female: 15 to 17 years
+ 
+    Time series AW: Persons: Female ~ 18 and 19 years
+        Year: 1970
+            Source dataset: 1970 Census: Count 2 - 100% Data [Tracts, Urban Areas, Metro Areas, etc.] 
+                Source table: NT2A. Sex by Age
+                    Universe: Persons
+                        Variable: [CE6120] Female >> 18 years
+                        Variable: [CE6121] Female >> 19 years
+        Year: 1980
+            Source dataset: 1980 Census: STF 1 - 100% Data
+                Source table: NT10B. Sex by Age
+                    Universe: Persons
+                        Variable: [C68038] Female >> 18 years
+                        Variable: [C68039] Female >> 19 years
+        Year: 1990
+            Source dataset: 1990 Census: STF 1 - 100% Data
+                Source table: NP12. Race by Sex by Age
+                    Universe: Persons
+                        Variable: [ET4044] White >> Female >> 18 years
+                        Variable: [ET4045] White >> Female >> 19 years
+                        Variable: [ET4106] Black >> Female >> 18 years
+                        Variable: [ET4107] Black >> Female >> 19 years
+                        Variable: [ET4168] American Indian, Eskimo, or Aleut >> Female >> 18 years
+                        Variable: [ET4169] American Indian, Eskimo, or Aleut >> Female >> 19 years
+                        Variable: [ET4230] Asian or Pacific Islander >> Female >> 18 years
+                        Variable: [ET4231] Asian or Pacific Islander >> Female >> 19 years
+                        Variable: [ET4292] Other race >> Female >> 18 years
+                        Variable: [ET4293] Other race >> Female >> 19 years
+        Year: 2000
+            Source dataset: 2000 Census: SF 1a - 100% Data [Areas Larger Than Block Groups]
+                Source table: NP012B. Population by Sex by Age
+                    Universe: Persons
+                        Variable: [FMZ028] Female >> 18 and 19 years
+        Year: 2010
+            Source dataset: 2010 Census: SF 1a - P & H Tables [Blocks & Larger Areas]
+                Source table: P12. Sex by Age
+                    Universe: Total population
+                        Variable: [H76031] Female: 18 and 19 years
+ 
+    Time series AX: Persons: Female ~ 20 years
+        Year: 1970
+            Source dataset: 1970 Census: Count 2 - 100% Data [Tracts, Urban Areas, Metro Areas, etc.] 
+                Source table: NT2A. Sex by Age
+                    Universe: Persons
+                        Variable: [CE6122] Female >> 20 years
+        Year: 1980
+            Source dataset: 1980 Census: STF 1 - 100% Data
+                Source table: NT10B. Sex by Age
+                    Universe: Persons
+                        Variable: [C68040] Female >> 20 years
+        Year: 1990
+            Source dataset: 1990 Census: STF 1 - 100% Data
+                Source table: NP12. Race by Sex by Age
+                    Universe: Persons
+                        Variable: [ET4046] White >> Female >> 20 years
+                        Variable: [ET4108] Black >> Female >> 20 years
+                        Variable: [ET4170] American Indian, Eskimo, or Aleut >> Female >> 20 years
+                        Variable: [ET4232] Asian or Pacific Islander >> Female >> 20 years
+                        Variable: [ET4294] Other race >> Female >> 20 years
+        Year: 2000
+            Source dataset: 2000 Census: SF 1a - 100% Data [Areas Larger Than Block Groups]
+                Source table: NP012B. Population by Sex by Age
+                    Universe: Persons
+                        Variable: [FMZ029] Female >> 20 years
+        Year: 2010
+            Source dataset: 2010 Census: SF 1a - P & H Tables [Blocks & Larger Areas]
+                Source table: P12. Sex by Age
+                    Universe: Total population
+                        Variable: [H76032] Female: 20 years
+ 
+    Time series AY: Persons: Female ~ 21 years
+        Year: 1970
+            Source dataset: 1970 Census: Count 2 - 100% Data [Tracts, Urban Areas, Metro Areas, etc.] 
+                Source table: NT2A. Sex by Age
+                    Universe: Persons
+                        Variable: [CE6123] Female >> 21 years
+        Year: 1980
+            Source dataset: 1980 Census: STF 1 - 100% Data
+                Source table: NT10B. Sex by Age
+                    Universe: Persons
+                        Variable: [C68041] Female >> 21 years
+        Year: 1990
+            Source dataset: 1990 Census: STF 1 - 100% Data
+                Source table: NP12. Race by Sex by Age
+                    Universe: Persons
+                        Variable: [ET4047] White >> Female >> 21 years
+                        Variable: [ET4109] Black >> Female >> 21 years
+                        Variable: [ET4171] American Indian, Eskimo, or Aleut >> Female >> 21 years
+                        Variable: [ET4233] Asian or Pacific Islander >> Female >> 21 years
+                        Variable: [ET4295] Other race >> Female >> 21 years
+        Year: 2000
+            Source dataset: 2000 Census: SF 1a - 100% Data [Areas Larger Than Block Groups]
+                Source table: NP012B. Population by Sex by Age
+                    Universe: Persons
+                        Variable: [FMZ030] Female >> 21 years
+        Year: 2010
+            Source dataset: 2010 Census: SF 1a - P & H Tables [Blocks & Larger Areas]
+                Source table: P12. Sex by Age
+                    Universe: Total population
+                        Variable: [H76033] Female: 21 years
+ 
+    Time series AZ: Persons: Female ~ 22 to 24 years
+        Year: 1970
+            Source dataset: 1970 Census: Count 2 - 100% Data [Tracts, Urban Areas, Metro Areas, etc.] 
+                Source table: NT2A. Sex by Age
+                    Universe: Persons
+                        Variable: [CE6124] Female >> 22 years
+                        Variable: [CE6125] Female >> 23 years
+                        Variable: [CE6126] Female >> 24 years
+        Year: 1980
+            Source dataset: 1980 Census: STF 1 - 100% Data
+                Source table: NT10B. Sex by Age
+                    Universe: Persons
+                        Variable: [C68042] Female >> 22-24 years
+        Year: 1990
+            Source dataset: 1990 Census: STF 1 - 100% Data
+                Source table: NP12. Race by Sex by Age
+                    Universe: Persons
+                        Variable: [ET4048] White >> Female >> 22 to 24 years
+                        Variable: [ET4110] Black >> Female >> 22 to 24 years
+                        Variable: [ET4172] American Indian, Eskimo, or Aleut >> Female >> 22 to 24 years
+                        Variable: [ET4234] Asian or Pacific Islander >> Female >> 22 to 24 years
+                        Variable: [ET4296] Other race >> Female >> 22 to 24 years
+        Year: 2000
+            Source dataset: 2000 Census: SF 1a - 100% Data [Areas Larger Than Block Groups]
+                Source table: NP012B. Population by Sex by Age
+                    Universe: Persons
+                        Variable: [FMZ031] Female >> 22 to 24 years
+        Year: 2010
+            Source dataset: 2010 Census: SF 1a - P & H Tables [Blocks & Larger Areas]
+                Source table: P12. Sex by Age
+                    Universe: Total population
+                        Variable: [H76034] Female: 22 to 24 years
+ 
+    Time series BA: Persons: Female ~ 25 to 29 years
+        Year: 1970
+            Source dataset: 1970 Census: Count 2 - 100% Data [Tracts, Urban Areas, Metro Areas, etc.] 
+                Source table: NT2A. Sex by Age
+                    Universe: Persons
+                        Variable: [CE6127] Female >> 25 years
+                        Variable: [CE6128] Female >> 26 years
+                        Variable: [CE6129] Female >> 27 years
+                        Variable: [CE6130] Female >> 28 years
+                        Variable: [CE6131] Female >> 29 years
+        Year: 1980
+            Source dataset: 1980 Census: STF 1 - 100% Data
+                Source table: NT10B. Sex by Age
+                    Universe: Persons
+                        Variable: [C68043] Female >> 25-29 years
+        Year: 1990
+            Source dataset: 1990 Census: STF 1 - 100% Data
+                Source table: NP12. Race by Sex by Age
+                    Universe: Persons
+                        Variable: [ET4049] White >> Female >> 25 to 29 years
+                        Variable: [ET4111] Black >> Female >> 25 to 29 years
+                        Variable: [ET4173] American Indian, Eskimo, or Aleut >> Female >> 25 to 29 years
+                        Variable: [ET4235] Asian or Pacific Islander >> Female >> 25 to 29 years
+                        Variable: [ET4297] Other race >> Female >> 25 to 29 years
+        Year: 2000
+            Source dataset: 2000 Census: SF 1a - 100% Data [Areas Larger Than Block Groups]
+                Source table: NP012B. Population by Sex by Age
+                    Universe: Persons
+                        Variable: [FMZ032] Female >> 25 to 29 years
+        Year: 2010
+            Source dataset: 2010 Census: SF 1a - P & H Tables [Blocks & Larger Areas]
+                Source table: P12. Sex by Age
+                    Universe: Total population
+                        Variable: [H76035] Female: 25 to 29 years
+ 
+    Time series BB: Persons: Female ~ 30 to 34 years
+        Year: 1970
+            Source dataset: 1970 Census: Count 2 - 100% Data [Tracts, Urban Areas, Metro Areas, etc.] 
+                Source table: NT2A. Sex by Age
+                    Universe: Persons
+                        Variable: [CE6132] Female >> 30 years
+                        Variable: [CE6133] Female >> 31 years
+                        Variable: [CE6134] Female >> 32 years
+                        Variable: [CE6135] Female >> 33 years
+                        Variable: [CE6136] Female >> 34 years
+        Year: 1980
+            Source dataset: 1980 Census: STF 1 - 100% Data
+                Source table: NT10B. Sex by Age
+                    Universe: Persons
+                        Variable: [C68044] Female >> 30-34 years
+        Year: 1990
+            Source dataset: 1990 Census: STF 1 - 100% Data
+                Source table: NP12. Race by Sex by Age
+                    Universe: Persons
+                        Variable: [ET4050] White >> Female >> 30 to 34 years
+                        Variable: [ET4112] Black >> Female >> 30 to 34 years
+                        Variable: [ET4174] American Indian, Eskimo, or Aleut >> Female >> 30 to 34 years
+                        Variable: [ET4236] Asian or Pacific Islander >> Female >> 30 to 34 years
+                        Variable: [ET4298] Other race >> Female >> 30 to 34 years
+        Year: 2000
+            Source dataset: 2000 Census: SF 1a - 100% Data [Areas Larger Than Block Groups]
+                Source table: NP012B. Population by Sex by Age
+                    Universe: Persons
+                        Variable: [FMZ033] Female >> 30 to 34 years
+        Year: 2010
+            Source dataset: 2010 Census: SF 1a - P & H Tables [Blocks & Larger Areas]
+                Source table: P12. Sex by Age
+                    Universe: Total population
+                        Variable: [H76036] Female: 30 to 34 years
+ 
+    Time series BC: Persons: Female ~ 35 to 44 years
+        Year: 1970
+            Source dataset: 1970 Census: Count 2 - 100% Data [Tracts, Urban Areas, Metro Areas, etc.] 
+                Source table: NT2A. Sex by Age
+                    Universe: Persons
+                        Variable: [CE6137] Female >> 35 years
+                        Variable: [CE6138] Female >> 36 years
+                        Variable: [CE6139] Female >> 37 years
+                        Variable: [CE6140] Female >> 38 years
+                        Variable: [CE6141] Female >> 39 years
+                        Variable: [CE6142] Female >> 40 years
+                        Variable: [CE6143] Female >> 41 years
+                        Variable: [CE6144] Female >> 42 years
+                        Variable: [CE6145] Female >> 43 years
+                        Variable: [CE6146] Female >> 44 years
+        Year: 1980
+            Source dataset: 1980 Census: STF 1 - 100% Data
+                Source table: NT10B. Sex by Age
+                    Universe: Persons
+                        Variable: [C68045] Female >> 35-44 years
+        Year: 1990
+            Source dataset: 1990 Census: STF 1 - 100% Data
+                Source table: NP12. Race by Sex by Age
+                    Universe: Persons
+                        Variable: [ET4051] White >> Female >> 35 to 39 years
+                        Variable: [ET4052] White >> Female >> 40 to 44 years
+                        Variable: [ET4113] Black >> Female >> 35 to 39 years
+                        Variable: [ET4114] Black >> Female >> 40 to 44 years
+                        Variable: [ET4175] American Indian, Eskimo, or Aleut >> Female >> 35 to 39 years
+                        Variable: [ET4176] American Indian, Eskimo, or Aleut >> Female >> 40 to 44 years
+                        Variable: [ET4237] Asian or Pacific Islander >> Female >> 35 to 39 years
+                        Variable: [ET4238] Asian or Pacific Islander >> Female >> 40 to 44 years
+                        Variable: [ET4299] Other race >> Female >> 35 to 39 years
+                        Variable: [ET4300] Other race >> Female >> 40 to 44 years
+        Year: 2000
+            Source dataset: 2000 Census: SF 1a - 100% Data [Areas Larger Than Block Groups]
+                Source table: NP012B. Population by Sex by Age
+                    Universe: Persons
+                        Variable: [FMZ034] Female >> 35 to 39 years
+                        Variable: [FMZ035] Female >> 40 to 44 years
+        Year: 2010
+            Source dataset: 2010 Census: SF 1a - P & H Tables [Blocks & Larger Areas]
+                Source table: P12. Sex by Age
+                    Universe: Total population
+                        Variable: [H76037] Female: 35 to 39 years
+                        Variable: [H76038] Female: 40 to 44 years
+ 
+    Time series BD: Persons: Female ~ 45 to 54 years
+        Year: 1970
+            Source dataset: 1970 Census: Count 2 - 100% Data [Tracts, Urban Areas, Metro Areas, etc.] 
+                Source table: NT2A. Sex by Age
+                    Universe: Persons
+                        Variable: [CE6147] Female >> 45 years
+                        Variable: [CE6148] Female >> 46 years
+                        Variable: [CE6149] Female >> 47 years
+                        Variable: [CE6150] Female >> 48 years
+                        Variable: [CE6151] Female >> 49 years
+                        Variable: [CE6152] Female >> 50 years
+                        Variable: [CE6153] Female >> 51 years
+                        Variable: [CE6154] Female >> 52 years
+                        Variable: [CE6155] Female >> 53 years
+                        Variable: [CE6156] Female >> 54 years
+        Year: 1980
+            Source dataset: 1980 Census: STF 1 - 100% Data
+                Source table: NT10B. Sex by Age
+                    Universe: Persons
+                        Variable: [C68046] Female >> 45-54 years
+        Year: 1990
+            Source dataset: 1990 Census: STF 1 - 100% Data
+                Source table: NP12. Race by Sex by Age
+                    Universe: Persons
+                        Variable: [ET4053] White >> Female >> 45 to 49 years
+                        Variable: [ET4054] White >> Female >> 50 to 54 years
+                        Variable: [ET4115] Black >> Female >> 45 to 49 years
+                        Variable: [ET4116] Black >> Female >> 50 to 54 years
+                        Variable: [ET4177] American Indian, Eskimo, or Aleut >> Female >> 45 to 49 years
+                        Variable: [ET4178] American Indian, Eskimo, or Aleut >> Female >> 50 to 54 years
+                        Variable: [ET4239] Asian or Pacific Islander >> Female >> 45 to 49 years
+                        Variable: [ET4240] Asian or Pacific Islander >> Female >> 50 to 54 years
+                        Variable: [ET4301] Other race >> Female >> 45 to 49 years
+                        Variable: [ET4302] Other race >> Female >> 50 to 54 years
+        Year: 2000
+            Source dataset: 2000 Census: SF 1a - 100% Data [Areas Larger Than Block Groups]
+                Source table: NP012B. Population by Sex by Age
+                    Universe: Persons
+                        Variable: [FMZ036] Female >> 45 to 49 years
+                        Variable: [FMZ037] Female >> 50 to 54 years
+        Year: 2010
+            Source dataset: 2010 Census: SF 1a - P & H Tables [Blocks & Larger Areas]
+                Source table: P12. Sex by Age
+                    Universe: Total population
+                        Variable: [H76039] Female: 45 to 49 years
+                        Variable: [H76040] Female: 50 to 54 years
+ 
+    Time series BE: Persons: Female ~ 55 to 59 years
+        Year: 1970
+            Source dataset: 1970 Census: Count 2 - 100% Data [Tracts, Urban Areas, Metro Areas, etc.] 
+                Source table: NT2A. Sex by Age
+                    Universe: Persons
+                        Variable: [CE6157] Female >> 55 years
+                        Variable: [CE6158] Female >> 56 years
+                        Variable: [CE6159] Female >> 57 years
+                        Variable: [CE6160] Female >> 58 years
+                        Variable: [CE6161] Female >> 59 years
+        Year: 1980
+            Source dataset: 1980 Census: STF 1 - 100% Data
+                Source table: NT10B. Sex by Age
+                    Universe: Persons
+                        Variable: [C68047] Female >> 55-59 years
+        Year: 1990
+            Source dataset: 1990 Census: STF 1 - 100% Data
+                Source table: NP12. Race by Sex by Age
+                    Universe: Persons
+                        Variable: [ET4055] White >> Female >> 55 to 59 years
+                        Variable: [ET4117] Black >> Female >> 55 to 59 years
+                        Variable: [ET4179] American Indian, Eskimo, or Aleut >> Female >> 55 to 59 years
+                        Variable: [ET4241] Asian or Pacific Islander >> Female >> 55 to 59 years
+                        Variable: [ET4303] Other race >> Female >> 55 to 59 years
+        Year: 2000
+            Source dataset: 2000 Census: SF 1a - 100% Data [Areas Larger Than Block Groups]
+                Source table: NP012B. Population by Sex by Age
+                    Universe: Persons
+                        Variable: [FMZ038] Female >> 55 to 59 years
+        Year: 2010
+            Source dataset: 2010 Census: SF 1a - P & H Tables [Blocks & Larger Areas]
+                Source table: P12. Sex by Age
+                    Universe: Total population
+                        Variable: [H76041] Female: 55 to 59 years
+ 
+    Time series BF: Persons: Female ~ 60 and 61 years
+        Year: 1970
+            Source dataset: 1970 Census: Count 2 - 100% Data [Tracts, Urban Areas, Metro Areas, etc.] 
+                Source table: NT2A. Sex by Age
+                    Universe: Persons
+                        Variable: [CE6162] Female >> 60 years
+                        Variable: [CE6163] Female >> 61 years
+        Year: 1980
+            Source dataset: 1980 Census: STF 1 - 100% Data
+                Source table: NT10B. Sex by Age
+                    Universe: Persons
+                        Variable: [C68048] Female >> 60-61 years
+        Year: 1990
+            Source dataset: 1990 Census: STF 1 - 100% Data
+                Source table: NP12. Race by Sex by Age
+                    Universe: Persons
+                        Variable: [ET4056] White >> Female >> 60 and 61 years
+                        Variable: [ET4118] Black >> Female >> 60 and 61 years
+                        Variable: [ET4180] American Indian, Eskimo, or Aleut >> Female >> 60 and 61 years
+                        Variable: [ET4242] Asian or Pacific Islander >> Female >> 60 and 61 years
+                        Variable: [ET4304] Other race >> Female >> 60 and 61 years
+        Year: 2000
+            Source dataset: 2000 Census: SF 1a - 100% Data [Areas Larger Than Block Groups]
+                Source table: NP012B. Population by Sex by Age
+                    Universe: Persons
+                        Variable: [FMZ039] Female >> 60 and 61 years
+        Year: 2010
+            Source dataset: 2010 Census: SF 1a - P & H Tables [Blocks & Larger Areas]
+                Source table: P12. Sex by Age
+                    Universe: Total population
+                        Variable: [H76042] Female: 60 and 61 years
+ 
+    Time series BG: Persons: Female ~ 62 to 64 years
+        Year: 1970
+            Source dataset: 1970 Census: Count 2 - 100% Data [Tracts, Urban Areas, Metro Areas, etc.] 
+                Source table: NT2A. Sex by Age
+                    Universe: Persons
+                        Variable: [CE6164] Female >> 62 years
+                        Variable: [CE6165] Female >> 63 years
+                        Variable: [CE6166] Female >> 64 years
+        Year: 1980
+            Source dataset: 1980 Census: STF 1 - 100% Data
+                Source table: NT10B. Sex by Age
+                    Universe: Persons
+                        Variable: [C68049] Female >> 62-64 years
+        Year: 1990
+            Source dataset: 1990 Census: STF 1 - 100% Data
+                Source table: NP12. Race by Sex by Age
+                    Universe: Persons
+                        Variable: [ET4057] White >> Female >> 62 to 64 years
+                        Variable: [ET4119] Black >> Female >> 62 to 64 years
+                        Variable: [ET4181] American Indian, Eskimo, or Aleut >> Female >> 62 to 64 years
+                        Variable: [ET4243] Asian or Pacific Islander >> Female >> 62 to 64 years
+                        Variable: [ET4305] Other race >> Female >> 62 to 64 years
+        Year: 2000
+            Source dataset: 2000 Census: SF 1a - 100% Data [Areas Larger Than Block Groups]
+                Source table: NP012B. Population by Sex by Age
+                    Universe: Persons
+                        Variable: [FMZ040] Female >> 62 to 64 years
+        Year: 2010
+            Source dataset: 2010 Census: SF 1a - P & H Tables [Blocks & Larger Areas]
+                Source table: P12. Sex by Age
+                    Universe: Total population
+                        Variable: [H76043] Female: 62 to 64 years
+ 
+    Time series BH: Persons: Female ~ 65 to 74 years
+        Year: 1970
+            Source dataset: 1970 Census: Count 2 - 100% Data [Tracts, Urban Areas, Metro Areas, etc.] 
+                Source table: NT2A. Sex by Age
+                    Universe: Persons
+                        Variable: [CE6167] Female >> 65 years
+                        Variable: [CE6168] Female >> 66 years
+                        Variable: [CE6169] Female >> 67 years
+                        Variable: [CE6170] Female >> 68 years
+                        Variable: [CE6171] Female >> 69 years
+                        Variable: [CE6172] Female >> 70 years
+                        Variable: [CE6173] Female >> 71 years
+                        Variable: [CE6174] Female >> 72 years
+                        Variable: [CE6175] Female >> 73 years
+                        Variable: [CE6176] Female >> 74 years
+        Year: 1980
+            Source dataset: 1980 Census: STF 1 - 100% Data
+                Source table: NT10B. Sex by Age
+                    Universe: Persons
+                        Variable: [C68050] Female >> 65-74 years
+        Year: 1990
+            Source dataset: 1990 Census: STF 1 - 100% Data
+                Source table: NP12. Race by Sex by Age
+                    Universe: Persons
+                        Variable: [ET4058] White >> Female >> 65 to 69 years
+                        Variable: [ET4059] White >> Female >> 70 to 74 years
+                        Variable: [ET4120] Black >> Female >> 65 to 69 years
+                        Variable: [ET4121] Black >> Female >> 70 to 74 years
+                        Variable: [ET4182] American Indian, Eskimo, or Aleut >> Female >> 65 to 69 years
+                        Variable: [ET4183] American Indian, Eskimo, or Aleut >> Female >> 70 to 74 years
+                        Variable: [ET4244] Asian or Pacific Islander >> Female >> 65 to 69 years
+                        Variable: [ET4245] Asian or Pacific Islander >> Female >> 70 to 74 years
+                        Variable: [ET4306] Other race >> Female >> 65 to 69 years
+                        Variable: [ET4307] Other race >> Female >> 70 to 74 years
+        Year: 2000
+            Source dataset: 2000 Census: SF 1a - 100% Data [Areas Larger Than Block Groups]
+                Source table: NP012B. Population by Sex by Age
+                    Universe: Persons
+                        Variable: [FMZ041] Female >> 65 and 66 years
+                        Variable: [FMZ042] Female >> 67 to 69 years
+                        Variable: [FMZ043] Female >> 70 to 74 years
+        Year: 2010
+            Source dataset: 2010 Census: SF 1a - P & H Tables [Blocks & Larger Areas]
+                Source table: P12. Sex by Age
+                    Universe: Total population
+                        Variable: [H76044] Female: 65 and 66 years
+                        Variable: [H76045] Female: 67 to 69 years
+                        Variable: [H76046] Female: 70 to 74 years
+ 
+    Time series BI: Persons: Female ~ 75 to 84 years
+        Year: 1970
+            Source dataset: 1970 Census: Count 2 - 100% Data [Tracts, Urban Areas, Metro Areas, etc.] 
+                Source table: NT2A. Sex by Age
+                    Universe: Persons
+                        Variable: [CE6177] Female >> 75 years
+                        Variable: [CE6178] Female >> 76 years
+                        Variable: [CE6179] Female >> 77 years
+                        Variable: [CE6180] Female >> 78 years
+                        Variable: [CE6181] Female >> 79 years
+                        Variable: [CE6182] Female >> 80 years
+                        Variable: [CE6183] Female >> 81 years
+                        Variable: [CE6184] Female >> 82 years
+                        Variable: [CE6185] Female >> 83 years
+                        Variable: [CE6186] Female >> 84 years
+        Year: 1980
+            Source dataset: 1980 Census: STF 1 - 100% Data
+                Source table: NT10B. Sex by Age
+                    Universe: Persons
+                        Variable: [C68051] Female >> 75-84 years
+        Year: 1990
+            Source dataset: 1990 Census: STF 1 - 100% Data
+                Source table: NP12. Race by Sex by Age
+                    Universe: Persons
+                        Variable: [ET4060] White >> Female >> 75 to 79 years
+                        Variable: [ET4061] White >> Female >> 80 to 84 years
+                        Variable: [ET4122] Black >> Female >> 75 to 79 years
+                        Variable: [ET4123] Black >> Female >> 80 to 84 years
+                        Variable: [ET4184] American Indian, Eskimo, or Aleut >> Female >> 75 to 79 years
+                        Variable: [ET4185] American Indian, Eskimo, or Aleut >> Female >> 80 to 84 years
+                        Variable: [ET4246] Asian or Pacific Islander >> Female >> 75 to 79 years
+                        Variable: [ET4247] Asian or Pacific Islander >> Female >> 80 to 84 years
+                        Variable: [ET4308] Other race >> Female >> 75 to 79 years
+                        Variable: [ET4309] Other race >> Female >> 80 to 84 years
+        Year: 2000
+            Source dataset: 2000 Census: SF 1a - 100% Data [Areas Larger Than Block Groups]
+                Source table: NP012B. Population by Sex by Age
+                    Universe: Persons
+                        Variable: [FMZ044] Female >> 75 to 79 years
+                        Variable: [FMZ045] Female >> 80 to 84 years
+        Year: 2010
+            Source dataset: 2010 Census: SF 1a - P & H Tables [Blocks & Larger Areas]
+                Source table: P12. Sex by Age
+                    Universe: Total population
+                        Variable: [H76047] Female: 75 to 79 years
+                        Variable: [H76048] Female: 80 to 84 years
+ 
+    Time series BJ: Persons: Female ~ 85 years and over
+        Year: 1970
+            Source dataset: 1970 Census: Count 2 - 100% Data [Tracts, Urban Areas, Metro Areas, etc.] 
+                Source table: NT2A. Sex by Age
+                    Universe: Persons
+                        Variable: [CE6187] Female >> 85 years
+                        Variable: [CE6188] Female >> 86 years
+                        Variable: [CE6189] Female >> 87 years
+                        Variable: [CE6190] Female >> 88 years
+                        Variable: [CE6191] Female >> 89 years
+                        Variable: [CE6192] Female >> 90 years
+                        Variable: [CE6193] Female >> 91 years
+                        Variable: [CE6194] Female >> 92 years
+                        Variable: [CE6195] Female >> 93 years
+                        Variable: [CE6196] Female >> 94 years
+                        Variable: [CE6197] Female >> 95 years
+                        Variable: [CE6198] Female >> 96 years
+                        Variable: [CE6199] Female >> 97 years
+                        Variable: [CE6200] Female >> 98 years
+                        Variable: [CE6201] Female >> 99 years
+                        Variable: [CE6202] Female >> 100 years and over
+        Year: 1980
+            Source dataset: 1980 Census: STF 1 - 100% Data
+                Source table: NT10B. Sex by Age
+                    Universe: Persons
+                        Variable: [C68052] Female >> 85 years and over
+        Year: 1990
+            Source dataset: 1990 Census: STF 1 - 100% Data
+                Source table: NP12. Race by Sex by Age
+                    Universe: Persons
+                        Variable: [ET4062] White >> Female >> 85 years and over
+                        Variable: [ET4124] Black >> Female >> 85 years and over
+                        Variable: [ET4186] American Indian, Eskimo, or Aleut >> Female >> 85 years and over
+                        Variable: [ET4248] Asian or Pacific Islander >> Female >> 85 years and over
+                        Variable: [ET4310] Other race >> Female >> 85 years and over
+        Year: 2000
+            Source dataset: 2000 Census: SF 1a - 100% Data [Areas Larger Than Block Groups]
+                Source table: NP012B. Population by Sex by Age
+                    Universe: Persons
+                        Variable: [FMZ046] Female >> 85 years and over
+        Year: 2010
+            Source dataset: 2010 Census: SF 1a - P & H Tables [Blocks & Larger Areas]
+                Source table: P12. Sex by Age
+                    Universe: Total population
+                        Variable: [H76049] Female: 85 years and over
+ 
+--------------------------------------------------------------------------------
+Citation and Use of NHGIS Data
+--------------------------------------------------------------------------------
+ 
+All persons are granted a limited license to use this documentation and the
+accompanying data, subject to the following conditions:
+
+* REDISTRIBUTION: You will not redistribute the data without permission.
+
+  You may publish a subset of the data to meet journal requirements for accessing 
+  data related to a particular publication. Contact us for permission for any other 
+  redistribution; we will consider requests for free and commercial redistribution.
+
+* CITATION: You will cite NHGIS appropriately.
+
+    * Publications and research reports employing NHGIS data (either tabular or GIS) 
+      should include the following citation:
+
+        Steven Manson, Jonathan Schroeder, David Van Riper, and Steven Ruggles. 
+        IPUMS National Historical Geographic Information System: Version 14.0 
+        [Database]. Minneapolis, MN: IPUMS. 2019. 
+        http://doi.org/10.18128/D050.V14.0
+
+    * For policy briefs, online resources, or articles in the popular press, we 
+      recommend that you cite the use of NHGIS data as follows:
+
+        IPUMS NHGIS, University of Minnesota, www.nhgis.org.
+
+These terms of use are a legally binding agreement. You can use the data only in 
+accordance with these terms, and any other use is a violation of the agreement. 
+Violations may result in revocation of the agreement and prohibition from using other 
+IPUMS data. If IPUMS or our partners are harmed from your violation, you are 
+responsible for all damages, including reasonable attorney's fees and expenses.
+        
+In addition, we request that users send us a copy of any publications, research
+reports, or educational material making use of the data or documentation.
+
+Send electronic material to: nhgis@umn.edu
+
+Printed matter should be sent to:
+
+    IPUMS NHGIS
+    Institute for Social Research and Data Innovation
+    University of Minnesota
+    50 Willey Hall
+    225 19th Ave S
+    Minneapolis, MN 55455

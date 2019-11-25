@@ -1,0 +1,522 @@
+--------------------------------------------------------------------------------
+Codebook for NHGIS data file 'nhgis0004_ts_geog2010_tract'
+--------------------------------------------------------------------------------
+ 
+Contents
+    - Data Summary
+    - Data Dictionary
+    - Geographic Integration Methods
+    - Source Data
+    - Citation and Use
+ 
+Detailed notes on time series design and comparability are available at: 
+    https://www.nhgis.org/sites/www.nhgis.org/files/nhgis_time_series_tables.pdf 
+ 
+--------------------------------------------------------------------------------
+Data Summary
+--------------------------------------------------------------------------------
+ 
+Time series layout:     Time varies by column
+Geographic level:       Census Tract (by State--County)
+Geographic integration: Standardized to 2010
+Data measurement years: 1990, 2000, 2010
+ 
+Tables:
+ 
+1. Households by Household Type [2] by Household Size [7]
+   Years: 1990, 2000, 2010
+   Code:  CS2
+ 
+--------------------------------------------------------------------------------
+Data Dictionary
+--------------------------------------------------------------------------------
+ 
+Context Fields 
+        GISJOIN:     GIS Join Match Code
+        GEOGYEAR:    Geography Year
+        STATE:       State Name
+        STATEA:      State Code
+        COUNTY:      County Name
+        COUNTYA:     County Code
+        TRACTA:      Census Tract Code
+ 
+Table 1: (CS2) Households by Household Type [2] by Household Size [7]
+    Time series AA: Households: Family ~ 2 persons
+        CS2AA1990:   1990: Households: Family ~ 2 persons
+        CS2AA1990L:  Lower bound: 1990: Households: Family ~ 2 persons
+        CS2AA1990U:  Upper bound: 1990: Households: Family ~ 2 persons
+        CS2AA2000:   2000: Households: Family ~ 2 persons
+        CS2AA2000L:  Lower bound: 2000: Households: Family ~ 2 persons
+        CS2AA2000U:  Upper bound: 2000: Households: Family ~ 2 persons
+        CS2AA2010:   2010: Households: Family ~ 2 persons
+    Time series AB: Households: Family ~ 3 persons
+        CS2AB1990:   1990: Households: Family ~ 3 persons
+        CS2AB1990L:  Lower bound: 1990: Households: Family ~ 3 persons
+        CS2AB1990U:  Upper bound: 1990: Households: Family ~ 3 persons
+        CS2AB2000:   2000: Households: Family ~ 3 persons
+        CS2AB2000L:  Lower bound: 2000: Households: Family ~ 3 persons
+        CS2AB2000U:  Upper bound: 2000: Households: Family ~ 3 persons
+        CS2AB2010:   2010: Households: Family ~ 3 persons
+    Time series AC: Households: Family ~ 4 persons
+        CS2AC1990:   1990: Households: Family ~ 4 persons
+        CS2AC1990L:  Lower bound: 1990: Households: Family ~ 4 persons
+        CS2AC1990U:  Upper bound: 1990: Households: Family ~ 4 persons
+        CS2AC2000:   2000: Households: Family ~ 4 persons
+        CS2AC2000L:  Lower bound: 2000: Households: Family ~ 4 persons
+        CS2AC2000U:  Upper bound: 2000: Households: Family ~ 4 persons
+        CS2AC2010:   2010: Households: Family ~ 4 persons
+    Time series AD: Households: Family ~ 5 persons
+        CS2AD1990:   1990: Households: Family ~ 5 persons
+        CS2AD1990L:  Lower bound: 1990: Households: Family ~ 5 persons
+        CS2AD1990U:  Upper bound: 1990: Households: Family ~ 5 persons
+        CS2AD2000:   2000: Households: Family ~ 5 persons
+        CS2AD2000L:  Lower bound: 2000: Households: Family ~ 5 persons
+        CS2AD2000U:  Upper bound: 2000: Households: Family ~ 5 persons
+        CS2AD2010:   2010: Households: Family ~ 5 persons
+    Time series AE: Households: Family ~ 6 persons
+        CS2AE1990:   1990: Households: Family ~ 6 persons
+        CS2AE1990L:  Lower bound: 1990: Households: Family ~ 6 persons
+        CS2AE1990U:  Upper bound: 1990: Households: Family ~ 6 persons
+        CS2AE2000:   2000: Households: Family ~ 6 persons
+        CS2AE2000L:  Lower bound: 2000: Households: Family ~ 6 persons
+        CS2AE2000U:  Upper bound: 2000: Households: Family ~ 6 persons
+        CS2AE2010:   2010: Households: Family ~ 6 persons
+    Time series AF: Households: Family ~ 7 or more persons
+        CS2AF1990:   1990: Households: Family ~ 7 or more persons
+        CS2AF1990L:  Lower bound: 1990: Households: Family ~ 7 or more persons
+        CS2AF1990U:  Upper bound: 1990: Households: Family ~ 7 or more persons
+        CS2AF2000:   2000: Households: Family ~ 7 or more persons
+        CS2AF2000L:  Lower bound: 2000: Households: Family ~ 7 or more persons
+        CS2AF2000U:  Upper bound: 2000: Households: Family ~ 7 or more persons
+        CS2AF2010:   2010: Households: Family ~ 7 or more persons
+    Time series AG: Households: Nonfamily ~ 1 person
+        CS2AG1990:   1990: Households: Nonfamily ~ 1 person
+        CS2AG1990L:  Lower bound: 1990: Households: Nonfamily ~ 1 person
+        CS2AG1990U:  Upper bound: 1990: Households: Nonfamily ~ 1 person
+        CS2AG2000:   2000: Households: Nonfamily ~ 1 person
+        CS2AG2000L:  Lower bound: 2000: Households: Nonfamily ~ 1 person
+        CS2AG2000U:  Upper bound: 2000: Households: Nonfamily ~ 1 person
+        CS2AG2010:   2010: Households: Nonfamily ~ 1 person
+    Time series AH: Households: Nonfamily ~ 2 persons
+        CS2AH1990:   1990: Households: Nonfamily ~ 2 persons
+        CS2AH1990L:  Lower bound: 1990: Households: Nonfamily ~ 2 persons
+        CS2AH1990U:  Upper bound: 1990: Households: Nonfamily ~ 2 persons
+        CS2AH2000:   2000: Households: Nonfamily ~ 2 persons
+        CS2AH2000L:  Lower bound: 2000: Households: Nonfamily ~ 2 persons
+        CS2AH2000U:  Upper bound: 2000: Households: Nonfamily ~ 2 persons
+        CS2AH2010:   2010: Households: Nonfamily ~ 2 persons
+    Time series AI: Households: Nonfamily ~ 3 persons
+        CS2AI1990:   1990: Households: Nonfamily ~ 3 persons
+        CS2AI1990L:  Lower bound: 1990: Households: Nonfamily ~ 3 persons
+        CS2AI1990U:  Upper bound: 1990: Households: Nonfamily ~ 3 persons
+        CS2AI2000:   2000: Households: Nonfamily ~ 3 persons
+        CS2AI2000L:  Lower bound: 2000: Households: Nonfamily ~ 3 persons
+        CS2AI2000U:  Upper bound: 2000: Households: Nonfamily ~ 3 persons
+        CS2AI2010:   2010: Households: Nonfamily ~ 3 persons
+    Time series AJ: Households: Nonfamily ~ 4 persons
+        CS2AJ1990:   1990: Households: Nonfamily ~ 4 persons
+        CS2AJ1990L:  Lower bound: 1990: Households: Nonfamily ~ 4 persons
+        CS2AJ1990U:  Upper bound: 1990: Households: Nonfamily ~ 4 persons
+        CS2AJ2000:   2000: Households: Nonfamily ~ 4 persons
+        CS2AJ2000L:  Lower bound: 2000: Households: Nonfamily ~ 4 persons
+        CS2AJ2000U:  Upper bound: 2000: Households: Nonfamily ~ 4 persons
+        CS2AJ2010:   2010: Households: Nonfamily ~ 4 persons
+    Time series AK: Households: Nonfamily ~ 5 persons
+        CS2AK1990:   1990: Households: Nonfamily ~ 5 persons
+        CS2AK1990L:  Lower bound: 1990: Households: Nonfamily ~ 5 persons
+        CS2AK1990U:  Upper bound: 1990: Households: Nonfamily ~ 5 persons
+        CS2AK2000:   2000: Households: Nonfamily ~ 5 persons
+        CS2AK2000L:  Lower bound: 2000: Households: Nonfamily ~ 5 persons
+        CS2AK2000U:  Upper bound: 2000: Households: Nonfamily ~ 5 persons
+        CS2AK2010:   2010: Households: Nonfamily ~ 5 persons
+    Time series AL: Households: Nonfamily ~ 6 persons
+        CS2AL1990:   1990: Households: Nonfamily ~ 6 persons
+        CS2AL1990L:  Lower bound: 1990: Households: Nonfamily ~ 6 persons
+        CS2AL1990U:  Upper bound: 1990: Households: Nonfamily ~ 6 persons
+        CS2AL2000:   2000: Households: Nonfamily ~ 6 persons
+        CS2AL2000L:  Lower bound: 2000: Households: Nonfamily ~ 6 persons
+        CS2AL2000U:  Upper bound: 2000: Households: Nonfamily ~ 6 persons
+        CS2AL2010:   2010: Households: Nonfamily ~ 6 persons
+    Time series AM: Households: Nonfamily ~ 7 or more persons
+        CS2AM1990:   1990: Households: Nonfamily ~ 7 or more persons
+        CS2AM1990L:  Lower bound: 1990: Households: Nonfamily ~ 7 or more persons
+        CS2AM1990U:  Upper bound: 1990: Households: Nonfamily ~ 7 or more persons
+        CS2AM2000:   2000: Households: Nonfamily ~ 7 or more persons
+        CS2AM2000L:  Lower bound: 2000: Households: Nonfamily ~ 7 or more persons
+        CS2AM2000U:  Upper bound: 2000: Households: Nonfamily ~ 7 or more persons
+        CS2AM2010:   2010: Households: Nonfamily ~ 7 or more persons
+ 
+--------------------------------------------------------------------------------
+Geographic Integration Methods
+--------------------------------------------------------------------------------
+ 
+1990 Block Data Standardized to 2010 Geography:
+
+    NHGIS standardizes the 1990 data in these time series tables to 2010 census
+    geography in two steps, first allocating census counts from 1990 census
+    blocks to 2010 census blocks and then summing the reallocated 1990 counts
+    for all 2010 blocks that lie within each target 2010 unit. In cases where a
+    1990 block may intersect multiple 2010 units, NHGIS applies interpolation to
+    estimate how 1990 block characteristics are distributed among the
+    intersecting 2010 blocks, primarily using the population and housing
+    densities of 2000 and 2010 blocks to model the distribution of 1990
+    characteristics within 1990 blocks.
+    
+    For details on the interpolation model, see:
+    https://www.nhgis.org/documentation/time-series/1990-blocks-to-2010-geog
+
+2000 Block Data Standardized to 2010 Geography:
+
+    NHGIS standardizes the 2000 data in these time series tables to 2010 census
+    geography in two steps, first allocating census counts from 2000 census
+    blocks to 2010 census blocks and then summing the reallocated 2000 counts
+    for all 2010 blocks that lie within each target 2010 unit. Where a 2000
+    block intersects multiple 2010 blocks, NHGIS applies areal interpolation to
+    estimate how the 2000 block characteristics are distributed among the
+    intersecting 2010 blocks.
+    
+    In addition to the 2000 block data drawn from 2000 Census Summary File 1
+    (NHGIS dataset 2000_SF1b), NHGIS uses information from three ancillary
+    sources to refine the interpolation model:
+    
+    * 2010 census block population and housing unit counts from 2010 Census
+    Summary File 1 (NHGIS dataset 2010_SF1a)
+    
+    * Locations of residential roads from the U.S. Census Bureau's 2010
+    TIGER/Line Shapefiles
+    
+    * Extents of developed land, which we define as 30-meter square cells in the
+    2001 National Land Cover Database (NLCD 2001) (2011 Edition) with at least
+    5% of their area covered by impervious surface.
+    
+    For details on the interpolation model, see:
+    https://www.nhgis.org/documentation/time-series/2000-blocks-to-2010-geog
+
+2010 Standardized Data:
+
+    For time series tables that are standardized to 2010 census geography, NHGIS
+    draws the 2010 data directly from 2010 Census Summary Files without any
+    estimation. The only adjustment NHGIS may make to the 2010 source data is,
+    for some time series, to sum source counts together to compute larger
+    subtotals.
+
+Complete documentation on time series integration methods is available at:
+    https://www.nhgis.org/documentation/time-series
+ 
+--------------------------------------------------------------------------------
+Source Data
+--------------------------------------------------------------------------------
+ 
+Additional documentation on NHGIS data sources is available at:
+    https://www.nhgis.org/documentation/tabular-data
+
+Table 1: (CS2) Households by Household Type [2] by Household Size [7]
+ 
+    Time series AA: Households: Family ~ 2 persons
+        Year: 1990
+            Source geographic level: Block (by State--County--Tract)
+            Source dataset: 1990 Census: STF 1 - 100% Data
+                Source table: NP27. Household Type and Household Size
+                    Universe: Households
+                        Variable: [EUL001] Family households: 2 persons
+        Year: 2000
+            Source geographic level: Block (by State--County--Tract)
+            Source dataset: 2000 Census: SF 1b - 100% Data [Blocks & Block Groups]
+                Source table: NP026A. Family Households by Household Size
+                    Universe: Family Households
+                        Variable: [F0C001] 2-person household
+        Year: 2010
+            Source geographic level: Census Tract (by State--County)
+            Source dataset: 2010 Census: SF 1a - P & H Tables [Blocks & Larger Areas]
+                Source table: P28. Household Type by Household Size
+                    Universe: Households
+                        Variable: [H8M003] Family households: 2-person household
+ 
+    Time series AB: Households: Family ~ 3 persons
+        Year: 1990
+            Source geographic level: Block (by State--County--Tract)
+            Source dataset: 1990 Census: STF 1 - 100% Data
+                Source table: NP27. Household Type and Household Size
+                    Universe: Households
+                        Variable: [EUL002] Family households: 3 persons
+        Year: 2000
+            Source geographic level: Block (by State--County--Tract)
+            Source dataset: 2000 Census: SF 1b - 100% Data [Blocks & Block Groups]
+                Source table: NP026A. Family Households by Household Size
+                    Universe: Family Households
+                        Variable: [F0C002] 3-person household
+        Year: 2010
+            Source geographic level: Census Tract (by State--County)
+            Source dataset: 2010 Census: SF 1a - P & H Tables [Blocks & Larger Areas]
+                Source table: P28. Household Type by Household Size
+                    Universe: Households
+                        Variable: [H8M004] Family households: 3-person household
+ 
+    Time series AC: Households: Family ~ 4 persons
+        Year: 1990
+            Source geographic level: Block (by State--County--Tract)
+            Source dataset: 1990 Census: STF 1 - 100% Data
+                Source table: NP27. Household Type and Household Size
+                    Universe: Households
+                        Variable: [EUL003] Family households: 4 persons
+        Year: 2000
+            Source geographic level: Block (by State--County--Tract)
+            Source dataset: 2000 Census: SF 1b - 100% Data [Blocks & Block Groups]
+                Source table: NP026A. Family Households by Household Size
+                    Universe: Family Households
+                        Variable: [F0C003] 4-person household
+        Year: 2010
+            Source geographic level: Census Tract (by State--County)
+            Source dataset: 2010 Census: SF 1a - P & H Tables [Blocks & Larger Areas]
+                Source table: P28. Household Type by Household Size
+                    Universe: Households
+                        Variable: [H8M005] Family households: 4-person household
+ 
+    Time series AD: Households: Family ~ 5 persons
+        Year: 1990
+            Source geographic level: Block (by State--County--Tract)
+            Source dataset: 1990 Census: STF 1 - 100% Data
+                Source table: NP27. Household Type and Household Size
+                    Universe: Households
+                        Variable: [EUL004] Family households: 5 persons
+        Year: 2000
+            Source geographic level: Block (by State--County--Tract)
+            Source dataset: 2000 Census: SF 1b - 100% Data [Blocks & Block Groups]
+                Source table: NP026A. Family Households by Household Size
+                    Universe: Family Households
+                        Variable: [F0C004] 5-person household
+        Year: 2010
+            Source geographic level: Census Tract (by State--County)
+            Source dataset: 2010 Census: SF 1a - P & H Tables [Blocks & Larger Areas]
+                Source table: P28. Household Type by Household Size
+                    Universe: Households
+                        Variable: [H8M006] Family households: 5-person household
+ 
+    Time series AE: Households: Family ~ 6 persons
+        Year: 1990
+            Source geographic level: Block (by State--County--Tract)
+            Source dataset: 1990 Census: STF 1 - 100% Data
+                Source table: NP27. Household Type and Household Size
+                    Universe: Households
+                        Variable: [EUL005] Family households: 6 persons
+        Year: 2000
+            Source geographic level: Block (by State--County--Tract)
+            Source dataset: 2000 Census: SF 1b - 100% Data [Blocks & Block Groups]
+                Source table: NP026A. Family Households by Household Size
+                    Universe: Family Households
+                        Variable: [F0C005] 6-person household
+        Year: 2010
+            Source geographic level: Census Tract (by State--County)
+            Source dataset: 2010 Census: SF 1a - P & H Tables [Blocks & Larger Areas]
+                Source table: P28. Household Type by Household Size
+                    Universe: Households
+                        Variable: [H8M007] Family households: 6-person household
+ 
+    Time series AF: Households: Family ~ 7 or more persons
+        Year: 1990
+            Source geographic level: Block (by State--County--Tract)
+            Source dataset: 1990 Census: STF 1 - 100% Data
+                Source table: NP27. Household Type and Household Size
+                    Universe: Households
+                        Variable: [EUL006] Family households: 7 or more persons
+        Year: 2000
+            Source geographic level: Block (by State--County--Tract)
+            Source dataset: 2000 Census: SF 1b - 100% Data [Blocks & Block Groups]
+                Source table: NP026A. Family Households by Household Size
+                    Universe: Family Households
+                        Variable: [F0C006] 7-or-more person household
+        Year: 2010
+            Source geographic level: Census Tract (by State--County)
+            Source dataset: 2010 Census: SF 1a - P & H Tables [Blocks & Larger Areas]
+                Source table: P28. Household Type by Household Size
+                    Universe: Households
+                        Variable: [H8M008] Family households: 7-or-more-person household
+ 
+    Time series AG: Households: Nonfamily ~ 1 person
+        Year: 1990
+            Source geographic level: Block (by State--County--Tract)
+            Source dataset: 1990 Census: STF 1 - 100% Data
+                Source table: NP16. Household Size and Household Type
+                    Universe: Households
+                        Variable: [ET8001] 1 person: Male householder
+                        Variable: [ET8002] 1 person: Female householder
+        Year: 2000
+            Source geographic level: Block (by State--County--Tract)
+            Source dataset: 2000 Census: SF 1b - 100% Data [Blocks & Block Groups]
+                Source table: NP018A. Households by Household Size
+                    Universe: Households
+                        Variable: [FZG001] 1-person household
+        Year: 2010
+            Source geographic level: Census Tract (by State--County)
+            Source dataset: 2010 Census: SF 1a - P & H Tables [Blocks & Larger Areas]
+                Source table: P18. Household Type
+                    Universe: Households
+                        Variable: [H8C008] Nonfamily households: Householder living alone
+ 
+    Time series AH: Households: Nonfamily ~ 2 persons
+        Year: 1990
+            Source geographic level: Block (by State--County--Tract)
+            Source dataset: 1990 Census: STF 1 - 100% Data
+                Source table: NP27. Household Type and Household Size
+                    Universe: Households
+                        Variable: [EUL008] Nonfamily households: 2 persons
+        Year: 2000
+            Source geographic level: Block (by State--County--Tract)
+            Source dataset: 2000 Census: SF 1b - 100% Data [Blocks & Block Groups]
+                Source table: NP026B. Nonfamily Households by Household Size
+                    Universe: Nonfamily Households
+                        Variable: [F0D002] 2-person household
+        Year: 2010
+            Source geographic level: Census Tract (by State--County)
+            Source dataset: 2010 Census: SF 1a - P & H Tables [Blocks & Larger Areas]
+                Source table: P28. Household Type by Household Size
+                    Universe: Households
+                        Variable: [H8M011] Nonfamily households: 2-person household
+ 
+    Time series AI: Households: Nonfamily ~ 3 persons
+        Year: 1990
+            Source geographic level: Block (by State--County--Tract)
+            Source dataset: 1990 Census: STF 1 - 100% Data
+                Source table: NP27. Household Type and Household Size
+                    Universe: Households
+                        Variable: [EUL009] Nonfamily households: 3 persons
+        Year: 2000
+            Source geographic level: Block (by State--County--Tract)
+            Source dataset: 2000 Census: SF 1b - 100% Data [Blocks & Block Groups]
+                Source table: NP026B. Nonfamily Households by Household Size
+                    Universe: Nonfamily Households
+                        Variable: [F0D003] 3-person household
+        Year: 2010
+            Source geographic level: Census Tract (by State--County)
+            Source dataset: 2010 Census: SF 1a - P & H Tables [Blocks & Larger Areas]
+                Source table: P28. Household Type by Household Size
+                    Universe: Households
+                        Variable: [H8M012] Nonfamily households: 3-person household
+ 
+    Time series AJ: Households: Nonfamily ~ 4 persons
+        Year: 1990
+            Source geographic level: Block (by State--County--Tract)
+            Source dataset: 1990 Census: STF 1 - 100% Data
+                Source table: NP27. Household Type and Household Size
+                    Universe: Households
+                        Variable: [EUL010] Nonfamily households: 4 persons
+        Year: 2000
+            Source geographic level: Block (by State--County--Tract)
+            Source dataset: 2000 Census: SF 1b - 100% Data [Blocks & Block Groups]
+                Source table: NP026B. Nonfamily Households by Household Size
+                    Universe: Nonfamily Households
+                        Variable: [F0D004] 4-person household
+        Year: 2010
+            Source geographic level: Census Tract (by State--County)
+            Source dataset: 2010 Census: SF 1a - P & H Tables [Blocks & Larger Areas]
+                Source table: P28. Household Type by Household Size
+                    Universe: Households
+                        Variable: [H8M013] Nonfamily households: 4-person household
+ 
+    Time series AK: Households: Nonfamily ~ 5 persons
+        Year: 1990
+            Source geographic level: Block (by State--County--Tract)
+            Source dataset: 1990 Census: STF 1 - 100% Data
+                Source table: NP27. Household Type and Household Size
+                    Universe: Households
+                        Variable: [EUL011] Nonfamily households: 5 persons
+        Year: 2000
+            Source geographic level: Block (by State--County--Tract)
+            Source dataset: 2000 Census: SF 1b - 100% Data [Blocks & Block Groups]
+                Source table: NP026B. Nonfamily Households by Household Size
+                    Universe: Nonfamily Households
+                        Variable: [F0D005] 5-person household
+        Year: 2010
+            Source geographic level: Census Tract (by State--County)
+            Source dataset: 2010 Census: SF 1a - P & H Tables [Blocks & Larger Areas]
+                Source table: P28. Household Type by Household Size
+                    Universe: Households
+                        Variable: [H8M014] Nonfamily households: 5-person household
+ 
+    Time series AL: Households: Nonfamily ~ 6 persons
+        Year: 1990
+            Source geographic level: Block (by State--County--Tract)
+            Source dataset: 1990 Census: STF 1 - 100% Data
+                Source table: NP27. Household Type and Household Size
+                    Universe: Households
+                        Variable: [EUL012] Nonfamily households: 6 persons
+        Year: 2000
+            Source geographic level: Block (by State--County--Tract)
+            Source dataset: 2000 Census: SF 1b - 100% Data [Blocks & Block Groups]
+                Source table: NP026B. Nonfamily Households by Household Size
+                    Universe: Nonfamily Households
+                        Variable: [F0D006] 6-person household
+        Year: 2010
+            Source geographic level: Census Tract (by State--County)
+            Source dataset: 2010 Census: SF 1a - P & H Tables [Blocks & Larger Areas]
+                Source table: P28. Household Type by Household Size
+                    Universe: Households
+                        Variable: [H8M015] Nonfamily households: 6-person household
+ 
+    Time series AM: Households: Nonfamily ~ 7 or more persons
+        Year: 1990
+            Source geographic level: Block (by State--County--Tract)
+            Source dataset: 1990 Census: STF 1 - 100% Data
+                Source table: NP27. Household Type and Household Size
+                    Universe: Households
+                        Variable: [EUL013] Nonfamily households: 7 or more persons
+        Year: 2000
+            Source geographic level: Block (by State--County--Tract)
+            Source dataset: 2000 Census: SF 1b - 100% Data [Blocks & Block Groups]
+                Source table: NP026B. Nonfamily Households by Household Size
+                    Universe: Nonfamily Households
+                        Variable: [F0D007] 7-or-more person household
+        Year: 2010
+            Source geographic level: Census Tract (by State--County)
+            Source dataset: 2010 Census: SF 1a - P & H Tables [Blocks & Larger Areas]
+                Source table: P28. Household Type by Household Size
+                    Universe: Households
+                        Variable: [H8M016] Nonfamily households: 7-or-more-person household
+ 
+--------------------------------------------------------------------------------
+Citation and Use of NHGIS Data
+--------------------------------------------------------------------------------
+ 
+All persons are granted a limited license to use this documentation and the
+accompanying data, subject to the following conditions:
+
+* REDISTRIBUTION: You will not redistribute the data without permission.
+
+  You may publish a subset of the data to meet journal requirements for accessing 
+  data related to a particular publication. Contact us for permission for any other 
+  redistribution; we will consider requests for free and commercial redistribution.
+
+* CITATION: You will cite NHGIS appropriately.
+
+    * Publications and research reports employing NHGIS data (either tabular or GIS) 
+      should include the following citation:
+
+        Steven Manson, Jonathan Schroeder, David Van Riper, and Steven Ruggles. 
+        IPUMS National Historical Geographic Information System: Version 14.0 
+        [Database]. Minneapolis, MN: IPUMS. 2019. 
+        http://doi.org/10.18128/D050.V14.0
+
+    * For policy briefs, online resources, or articles in the popular press, we 
+      recommend that you cite the use of NHGIS data as follows:
+
+        IPUMS NHGIS, University of Minnesota, www.nhgis.org.
+
+These terms of use are a legally binding agreement. You can use the data only in 
+accordance with these terms, and any other use is a violation of the agreement. 
+Violations may result in revocation of the agreement and prohibition from using other 
+IPUMS data. If IPUMS or our partners are harmed from your violation, you are 
+responsible for all damages, including reasonable attorney's fees and expenses.
+        
+In addition, we request that users send us a copy of any publications, research
+reports, or educational material making use of the data or documentation.
+
+Send electronic material to: nhgis@umn.edu
+
+Printed matter should be sent to:
+
+    IPUMS NHGIS
+    Institute for Social Research and Data Innovation
+    University of Minnesota
+    50 Willey Hall
+    225 19th Ave S
+    Minneapolis, MN 55455

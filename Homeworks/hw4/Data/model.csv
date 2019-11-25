@@ -1,0 +1,273 @@
+code,icc,scale,description,geo
+99215,0.03757743564926014,145.60350725302587,"Established patient office or other outpatient, visit typically 40 minutes",nppes_provider_zip
+99204,0.041174671556592636,38.33738264903105,"New patient office or other outpatient visit, typically 45 minutes",nppes_provider_zip
+99214,0.043140408078051175,162.9600592635046,"Established patient office or other outpatient, visit typically 25 minutes",nppes_provider_zip
+76942,0.04336190949287963,43.03654075826941,Ultrasonic guidance imaging supervision and interpretation for insertion of needle,nppes_provider_zip
+99213,0.0456702159200001,171.10404826303062,"Established patient office or other outpatient visit, typically 15 minutes",nppes_provider_zip
+99231,0.045735222901443565,211.95723668531255,"Subsequent hospital inpatient care, typically 15 minutes per day",nppes_provider_zip
+99291,0.04659869117958649,76.06936891258529,"Critical care delivery critically ill or injured patient, first 30-74 minutes",nppes_provider_zip
+99205,0.04662349850804972,26.24541785683662,"New patient office or other outpatient visit, typically 60 minutes",nppes_provider_zip
+99221,0.048794657929853685,35.200073845353295,"Initial hospital inpatient care, typically 30 minutes per day",nppes_provider_zip
+99203,0.05254748531729219,42.36678418645899,"New patient office or other outpatient visit, typically 30 minutes",nppes_provider_zip
+99232,0.052646099472772205,286.22507443336906,"Subsequent hospital inpatient care, typically 25 minutes per day",nppes_provider_zip
+99222,0.05382992335212161,54.77776980000701,"Initial hospital inpatient care, typically 50 minutes per day",nppes_provider_zip
+99212,0.0550471187685388,155.63595078597353,"Established patient office or other outpatient visit, typically 10 minutes",nppes_provider_zip
+00740,0.0562132943072945,15.365262687352448,Anesthesia for procedure on gastrointestinal tract using an endoscope,nppes_provider_zip
+99238,0.058965927476627496,41.693572773182524,"Hospital discharge day management, 30 minutes or less",nppes_provider_zip
+99233,0.0595218843109893,220.39612318037558,"Subsequent hospital inpatient care, typically 35 minutes per day",nppes_provider_zip
+99223,0.06909774494927395,66.12836525790104,"Initial hospital inpatient care, typically 70 minutes per day",nppes_provider_zip
+00810,0.07268945460532454,30.26893518617067,Anesthesia for procedure on lower intestine using an endoscope,nppes_provider_zip
+92083,0.07394329454145654,68.92230954278695,Measurement of field of vision during daylight conditions,nppes_provider_zip
+93880,0.08037464955542534,96.9914040930455,Ultrasound scanning of blood flow (outside the brain) on both sides of head and neck,nppes_provider_zip
+20610,0.08364823718486973,114.01577332921889,Aspiration and/or injection of large joint or joint capsule,nppes_provider_zip
+99285,0.0874680343386755,41.29432563451954,"Emergency department visit, problem with significant threat to life or function",nppes_provider_zip
+73502,0.09304821054084349,51.9310254667042,"X-ray of hip with pelvis, 2-3 views",nppes_provider_zip
+99220,0.09364353241649573,30.82817792724955,Hospital observation care typically 70 minutes per day,nppes_provider_zip
+97530,0.09393211605835666,341.3145574803049,"Therapeutic activities to improve function, with one-on-one contact between patient and provider, each 15 minutes",nppes_provider_zip
+73630,0.0940178949922148,73.83806818839928,"X-ray of foot, minimum of 3 views",nppes_provider_zip
+93010,0.09736853295522829,315.14795110263816,Routine electrocardiogram (EKG) using at least 12 leads with interpretation and report,nppes_provider_zip
+73030,0.09870526937521917,55.81293693782077,"X-ray of shoulder, minimum of 2 views",nppes_provider_zip
+99202,0.10288428692423474,38.69843813002474,"New patient office or other outpatient visit, typically 20 minutes",nppes_provider_zip
+G0180,0.10483016498291313,72.43778350953271,"Physician certification for medicare-covered home health services under a home health plan of care (patient not present), including contacts with home health agency and review of reports of patient status required by physicians to affirm the initial implem",nppes_provider_zip
+72100,0.10923357526792217,57.70357176559008,"X-ray of lower and sacral spine, 2 or 3 views",nppes_provider_zip
+99239,0.10974811336366383,46.360219412492434,"Hospital discharge day management, more than 30 minutes",nppes_provider_zip
+99283,0.11129357949089748,26.367838867699803,"Emergency department visit, moderately severe problem",nppes_provider_zip
+G0008,0.11651009471339041,36.6203211130481,Administration of influenza virus vaccine,nppes_provider_zip
+80053,0.11967148725504002,186.50996520065362,"Blood test, comprehensive group of blood chemicals",nppes_provider_zip
+99217,0.12120969017118138,22.547490763426836,Hospital observation care discharge,nppes_provider_zip
+73560,0.12436104956284907,75.0875610072195,"X-ray of knee, 1 or 2 views",nppes_provider_zip
+90732,0.1253010407320712,8.582829424226592,"Vaccine for pneumococcal polysaccharide for injection beneath the skin or into muscle, patient 2 years or older",nppes_provider_zip
+73562,0.1322035068925603,89.75483474575847,"X-ray of knee, 3 views",nppes_provider_zip
+99284,0.1353075096096708,27.51859914735844,"Emergency department visit, problem of high severity",nppes_provider_zip
+97112,0.13554283328650618,237.6832227616022,"Therapeutic procedure to re-educate brain-to-nerve-to-muscle function, each 15 minutes",nppes_provider_zip
+99211,0.13615582351499458,235.3089311863092,"Established patient office or other outpatient visit, typically 5 minutes",nppes_provider_zip
+96372,0.14404917298172382,110.30805907204682,"Injection beneath the skin or into muscle for therapy, diagnosis, or prevention",nppes_provider_zip
+36415,0.1455146257338129,167.26775705418484,Insertion of needle into vein for collection of blood sample,nppes_provider_zip
+93306,0.1483950837246895,135.34471446857881,"Ultrasound examination of heart including color-depicted blood flow rate, direction, and valve function",nppes_provider_zip
+71010,0.14961529469302548,386.5832958783262,"X-ray of chest, 1 view, front",nppes_provider_zip
+97162,0.15131174121054483,13.64671270748741,"Evaluation of physical therapy, typically 30 minutes",nppes_provider_zip
+85025,0.15263810038380793,162.86104282519375,"Complete blood cell count (red cells, white blood cell, platelets), automated test",nppes_provider_zip
+92004,0.1565905020487904,57.21528509628881,"Eye and medical examination for diagnosis and treatment, new patient, 1 or more visits",nppes_provider_zip
+71020,0.157269838788333,136.37589982010434,"X-ray of chest, 2 views, front and side",nppes_provider_zip
+G0009,0.15922568329110706,14.321215905780463,Administration of pneumococcal vaccine,nppes_provider_zip
+90670,0.16642365768781356,10.567768601046051,Pneumococcal vaccine for injection into muscle,nppes_provider_zip
+99309,0.1690069378699394,420.985370296633,"Subsequent nursing facility visit, typically 25 minutes per day",nppes_provider_zip
+90662,0.16956799929069927,30.371961219195054,Vaccine for influenza for injection into muscle,nppes_provider_zip
+83036,0.17311308674041226,76.4714602345218,Hemoglobin A1C level,nppes_provider_zip
+J3301,0.17729496559687585,458.4408758926212,"Injection, triamcinolone acetonide, not otherwise specified, 10 mg",nppes_provider_zip
+99308,0.17842672257285888,451.66134600596183,"Subsequent nursing facility visit, typically 15 minutes per day",nppes_provider_zip
+97110,0.17849641904011698,180.38141518948075,"Therapeutic exercise to develop strength, endurance, range of motion, and flexibility, each 15 minutes",nppes_provider_zip
+85610,0.1883095492818818,210.9433959609181,"Blood test, clotting time",nppes_provider_zip
+G0438,0.22269674746128407,42.6057508543776,"Annual wellness visit; includes a personalized prevention plan of service (pps), initial visit",nppes_provider_zip
+97161,0.23887812064156713,17.534096461868984,"Evaluation of physical therapy, typically 20 minutes",nppes_provider_zip
+G0439,0.25749113768973464,44.05545095583885,"Annual wellness visit, includes a personalized prevention plan of service (pps), subsequent visit",nppes_provider_zip
+93000,0.281139948088993,109.27148430501505,Routine EKG using at least 12 leads including interpretation and report,nppes_provider_zip
+81003,0.2872514820927691,93.03830677523861,Automated urinalysis test,nppes_provider_zip
+81002,0.2928617981168315,80.34942606435898,"Urinalysis, manual test",nppes_provider_zip
+98941,0.3274543684398311,50.02091938291669,"Chiropractic manipulative treatment, 3 to 4 spinal regions",nppes_provider_zip
+97140,0.32801132074706074,172.58825022523104,"Manual (physical) therapy techniques to 1 or more regions, each 15 minutes",nppes_provider_zip
+92014,0.3289007651898858,116.95389766947865,"Eye and medical examination for diagnosis and treatment, established patient, 1 or more visits",nppes_provider_zip
+99212,0.01392200048168542,156.15214649127793,"Established patient office or other outpatient visit, typically 10 minutes",tract
+99203,0.01957316560454704,42.40532826790815,"New patient office or other outpatient visit, typically 30 minutes",tract
+99215,0.020294643860557897,145.88181158092885,"Established patient office or other outpatient, visit typically 40 minutes",tract
+99231,0.020509059010225286,210.04647048665728,"Subsequent hospital inpatient care, typically 15 minutes per day",tract
+99204,0.02088538646221195,38.392576114583825,"New patient office or other outpatient visit, typically 45 minutes",tract
+99214,0.0232759176163925,163.3196881112961,"Established patient office or other outpatient, visit typically 25 minutes",tract
+76942,0.023734097433754885,42.69649904221975,Ultrasonic guidance imaging supervision and interpretation for insertion of needle,tract
+99205,0.024061350835658243,26.226077270175153,"New patient office or other outpatient visit, typically 60 minutes",tract
+99213,0.024391232627639963,171.93375968456292,"Established patient office or other outpatient visit, typically 15 minutes",tract
+99221,0.02610043373971768,35.103195212484884,"Initial hospital inpatient care, typically 30 minutes per day",tract
+99238,0.02671222376907316,41.51689952301508,"Hospital discharge day management, 30 minutes or less",tract
+99291,0.029134168734556896,75.39135410152934,"Critical care delivery critically ill or injured patient, first 30-74 minutes",tract
+20610,0.03260149511129921,112.33086275595736,Aspiration and/or injection of large joint or joint capsule,tract
+99233,0.033087805781343946,220.6038959657672,"Subsequent hospital inpatient care, typically 35 minutes per day",tract
+99202,0.033429629239729926,38.5784942811928,"New patient office or other outpatient visit, typically 20 minutes",tract
+G0180,0.033481075158149215,75.45871264751597,"Physician certification for medicare-covered home health services under a home health plan of care (patient not present), including contacts with home health agency and review of reports of patient status required by physicians to affirm the initial implem",tract
+99232,0.03394769421835005,286.4653770981213,"Subsequent hospital inpatient care, typically 25 minutes per day",tract
+99222,0.034616109460882165,54.79528138092257,"Initial hospital inpatient care, typically 50 minutes per day",tract
+98941,0.034963937852643255,53.616092382638605,"Chiropractic manipulative treatment, 3 to 4 spinal regions",tract
+92083,0.03842092994877921,70.11452076392186,Measurement of field of vision during daylight conditions,tract
+G0008,0.0384267890646397,38.68457555072134,Administration of influenza virus vaccine,tract
+99223,0.03930831391120464,66.08359937364045,"Initial hospital inpatient care, typically 70 minutes per day",tract
+00740,0.039921674018103974,15.397826680354157,Anesthesia for procedure on gastrointestinal tract using an endoscope,tract
+93880,0.040647108104332974,97.60603535624325,Ultrasound scanning of blood flow (outside the brain) on both sides of head and neck,tract
+73502,0.04905999179627708,52.90052790110304,"X-ray of hip with pelvis, 2-3 views",tract
+00810,0.050387414095999984,30.122889556428078,Anesthesia for procedure on lower intestine using an endoscope,tract
+96372,0.05162102192193214,110.19633629487548,"Injection beneath the skin or into muscle for therapy, diagnosis, or prevention",tract
+90732,0.05246818002724656,8.602254034707311,"Vaccine for pneumococcal polysaccharide for injection beneath the skin or into muscle, patient 2 years or older",tract
+36415,0.05319841530900198,191.11846948958438,Insertion of needle into vein for collection of blood sample,tract
+80053,0.053687546064766,190.28945452845346,"Blood test, comprehensive group of blood chemicals",tract
+73030,0.0545601985595594,57.49104073805487,"X-ray of shoulder, minimum of 2 views",tract
+73630,0.05585025840332953,76.53631760668578,"X-ray of foot, minimum of 3 views",tract
+93010,0.05718197082523483,320.61385771565205,Routine electrocardiogram (EKG) using at least 12 leads with interpretation and report,tract
+J3301,0.058800764227044146,473.26639099415894,"Injection, triamcinolone acetonide, not otherwise specified, 10 mg",tract
+99239,0.060034378077549765,46.46732673931717,"Hospital discharge day management, more than 30 minutes",tract
+90662,0.06078484405748606,33.60729358557043,Vaccine for influenza for injection into muscle,tract
+72100,0.06190848632730421,57.70805401243146,"X-ray of lower and sacral spine, 2 or 3 views",tract
+99211,0.062349798845556824,233.61810789745903,"Established patient office or other outpatient visit, typically 5 minutes",tract
+99220,0.0646938522437404,30.8038947364211,Hospital observation care typically 70 minutes per day,tract
+93000,0.06517989151138702,155.5542958081254,Routine EKG using at least 12 leads including interpretation and report,tract
+99217,0.06695556120482987,22.451597550426772,Hospital observation care discharge,tract
+73560,0.06711730926350164,75.40778603874261,"X-ray of knee, 1 or 2 views",tract
+99285,0.06775952801366832,40.87279756479677,"Emergency department visit, problem with significant threat to life or function",tract
+92004,0.06798911347912434,57.40335050574928,"Eye and medical examination for diagnosis and treatment, new patient, 1 or more visits",tract
+85025,0.07255638445311924,171.0531493979857,"Complete blood cell count (red cells, white blood cell, platelets), automated test",tract
+G0009,0.07281312260801331,14.32930757369663,Administration of pneumococcal vaccine,tract
+93306,0.0728346901037912,136.94745514045263,"Ultrasound examination of heart including color-depicted blood flow rate, direction, and valve function",tract
+71020,0.0735154316221974,138.2055800877886,"X-ray of chest, 2 views, front and side",tract
+90670,0.07419938887005202,10.558787994340241,Pneumococcal vaccine for injection into muscle,tract
+83036,0.07638254810418162,78.11453512838672,Hemoglobin A1C level,tract
+73562,0.07730413239941017,89.74142393733112,"X-ray of knee, 3 views",tract
+97530,0.07734962513916756,340.8764183105931,"Therapeutic activities to improve function, with one-on-one contact between patient and provider, each 15 minutes",tract
+85610,0.07910066950456578,218.71739743902262,"Blood test, clotting time",tract
+97162,0.08421403873855669,13.769620047797186,"Evaluation of physical therapy, typically 30 minutes",tract
+99283,0.08531009192024597,26.14830544884189,"Emergency department visit, moderately severe problem",tract
+81002,0.08747746099822179,80.27970533217886,"Urinalysis, manual test",tract
+97112,0.088288828827169,238.34053184736672,"Therapeutic procedure to re-educate brain-to-nerve-to-muscle function, each 15 minutes",tract
+97110,0.08985251226088861,181.02857198904127,"Therapeutic exercise to develop strength, endurance, range of motion, and flexibility, each 15 minutes",tract
+81003,0.09088557648936109,92.78608319854163,Automated urinalysis test,tract
+G0439,0.09607555820113124,43.9511556591734,"Annual wellness visit, includes a personalized prevention plan of service (pps), subsequent visit",tract
+G0438,0.09620093496172111,43.52792501413485,"Annual wellness visit; includes a personalized prevention plan of service (pps), initial visit",tract
+99284,0.10077531815364371,27.182012170731284,"Emergency department visit, problem of high severity",tract
+71010,0.10211782488210658,387.92715828874185,"X-ray of chest, 1 view, front",tract
+92014,0.11259129943388949,120.10709312760189,"Eye and medical examination for diagnosis and treatment, established patient, 1 or more visits",tract
+97161,0.12132941855817032,17.914402476871192,"Evaluation of physical therapy, typically 20 minutes",tract
+99309,0.1235182518613778,423.66088169409454,"Subsequent nursing facility visit, typically 25 minutes per day",tract
+99308,0.133371832192751,455.0158933208174,"Subsequent nursing facility visit, typically 15 minutes per day",tract
+97140,0.1495842467534472,172.60931249775683,"Manual (physical) therapy techniques to 1 or more regions, each 15 minutes",tract
+G0180,0.0006935256352029403,71.75915224425856,"Physician certification for medicare-covered home health services under a home health plan of care (patient not present), including contacts with home health agency and review of reports of patient status required by physicians to affirm the initial implem",county
+99215,0.004074485141927927,145.066272524087,"Established patient office or other outpatient, visit typically 40 minutes",county
+98941,0.004371939091519221,53.53401543854744,"Chiropractic manipulative treatment, 3 to 4 spinal regions",county
+99203,0.0054951220352446786,42.1580319422254,"New patient office or other outpatient visit, typically 30 minutes",county
+76942,0.005622534275845532,41.679624898625825,Ultrasonic guidance imaging supervision and interpretation for insertion of needle,county
+99212,0.00564176661174034,155.91684304109174,"Established patient office or other outpatient visit, typically 10 minutes",county
+99238,0.005694348411165969,41.56943164797466,"Hospital discharge day management, 30 minutes or less",county
+99204,0.005808983011424366,38.22620613726241,"New patient office or other outpatient visit, typically 45 minutes",county
+92083,0.005890137295472188,69.79814063490183,Measurement of field of vision during daylight conditions,county
+99233,0.005962429865484318,214.2454154650792,"Subsequent hospital inpatient care, typically 35 minutes per day",county
+99291,0.0065377236711205025,74.59611586652997,"Critical care delivery critically ill or injured patient, first 30-74 minutes",county
+20610,0.006896879532000461,111.46966291409073,Aspiration and/or injection of large joint or joint capsule,county
+99205,0.007072921872334147,26.0898142070247,"New patient office or other outpatient visit, typically 60 minutes",county
+99213,0.007271518029339967,170.56865436746233,"Established patient office or other outpatient visit, typically 15 minutes",county
+99231,0.007451830180804255,206.39138282407075,"Subsequent hospital inpatient care, typically 15 minutes per day",county
+93880,0.00751507821826819,96.96767014762096,Ultrasound scanning of blood flow (outside the brain) on both sides of head and neck,county
+92004,0.0075214013891092245,54.9794835048467,"Eye and medical examination for diagnosis and treatment, new patient, 1 or more visits",county
+99214,0.007822338224730848,161.78595819039424,"Established patient office or other outpatient, visit typically 25 minutes",county
+99202,0.007829602818915734,37.94678802421685,"New patient office or other outpatient visit, typically 20 minutes",county
+99221,0.007895235546898268,35.41055494227072,"Initial hospital inpatient care, typically 30 minutes per day",county
+J3301,0.009052550547472843,465.7838531114949,"Injection, triamcinolone acetonide, not otherwise specified, 10 mg",county
+99223,0.009389189694266418,65.55976784716763,"Initial hospital inpatient care, typically 70 minutes per day",county
+G0008,0.01063518263973107,41.00148098649944,Administration of influenza virus vaccine,county
+73030,0.011184916592276469,58.6960669978294,"X-ray of shoulder, minimum of 2 views",county
+90732,0.011503409250859515,8.63740911548567,"Vaccine for pneumococcal polysaccharide for injection beneath the skin or into muscle, patient 2 years or older",county
+81002,0.011866926144100882,80.12197756948179,"Urinalysis, manual test",county
+72100,0.01205389194267598,58.47212223102326,"X-ray of lower and sacral spine, 2 or 3 views",county
+96372,0.01206097404036209,109.28344540481729,"Injection beneath the skin or into muscle for therapy, diagnosis, or prevention",county
+73502,0.012120641964356315,53.57325049481122,"X-ray of hip with pelvis, 2-3 views",county
+99308,0.01236157192986215,441.4132009274716,"Subsequent nursing facility visit, typically 15 minutes per day",county
+93000,0.01241819536653676,109.35306154829914,Routine EKG using at least 12 leads including interpretation and report,county
+00740,0.012522128617147112,15.352604398599965,Anesthesia for procedure on gastrointestinal tract using an endoscope,county
+99232,0.012702415321561123,275.17877378994507,"Subsequent hospital inpatient care, typically 25 minutes per day",county
+99239,0.012848639980498648,46.40715259509725,"Hospital discharge day management, more than 30 minutes",county
+99211,0.012944048804982481,238.51860242887466,"Established patient office or other outpatient visit, typically 5 minutes",county
+99309,0.012944068738647178,412.38748007197,"Subsequent nursing facility visit, typically 25 minutes per day",county
+36415,0.013042672511706781,183.10719396861165,Insertion of needle into vein for collection of blood sample,county
+73630,0.013051359968190256,77.43454139090935,"X-ray of foot, minimum of 3 views",county
+G0438,0.013072350432448558,42.64577375111117,"Annual wellness visit; includes a personalized prevention plan of service (pps), initial visit",county
+97162,0.013318148921348263,13.742182334687888,"Evaluation of physical therapy, typically 30 minutes",county
+99222,0.013452368438674284,54.463451084032805,"Initial hospital inpatient care, typically 50 minutes per day",county
+00810,0.013726564010532894,30.330589804635835,Anesthesia for procedure on lower intestine using an endoscope,county
+93010,0.013971886782742773,322.33844858591294,Routine electrocardiogram (EKG) using at least 12 leads with interpretation and report,county
+97112,0.01402669336800464,236.40096318875788,"Therapeutic procedure to re-educate brain-to-nerve-to-muscle function, each 15 minutes",county
+93306,0.014101610826855354,139.1665018267681,"Ultrasound examination of heart including color-depicted blood flow rate, direction, and valve function",county
+99220,0.014798075524482358,30.76469550501534,Hospital observation care typically 70 minutes per day,county
+97161,0.01552860963118993,18.031926350297116,"Evaluation of physical therapy, typically 20 minutes",county
+90662,0.0160611832000221,35.435499360726894,Vaccine for influenza for injection into muscle,county
+90670,0.01624835018360658,10.551932018440489,Pneumococcal vaccine for injection into muscle,county
+97110,0.016304339571192598,178.06789469684227,"Therapeutic exercise to develop strength, endurance, range of motion, and flexibility, each 15 minutes",county
+99217,0.016322126595193297,22.39443735923978,Hospital observation care discharge,county
+73560,0.016538575152430405,74.94758414162443,"X-ray of knee, 1 or 2 views",county
+71020,0.017579568654232804,137.61369316923006,"X-ray of chest, 2 views, front and side",county
+99283,0.017932131305410718,25.414400991907836,"Emergency department visit, moderately severe problem",county
+99285,0.018441282164159897,40.876464847896315,"Emergency department visit, problem with significant threat to life or function",county
+G0009,0.018470196327683524,14.32696933698863,Administration of pneumococcal vaccine,county
+83036,0.018592530588429496,76.65406151575351,Hemoglobin A1C level,county
+99284,0.018747545171561734,26.754095129908393,"Emergency department visit, problem of high severity",county
+G0439,0.019164114926433495,43.96319317043525,"Annual wellness visit, includes a personalized prevention plan of service (pps), subsequent visit",county
+85610,0.01947974562219802,214.24569767963388,"Blood test, clotting time",county
+80053,0.02020200316935967,184.39912288416838,"Blood test, comprehensive group of blood chemicals",county
+73562,0.02096457954316177,92.33860919993805,"X-ray of knee, 3 views",county
+92014,0.02111574499908458,119.61612961453997,"Eye and medical examination for diagnosis and treatment, established patient, 1 or more visits",county
+81003,0.021467054528709086,92.30258378463049,Automated urinalysis test,county
+97140,0.02191619777282,170.67483186876908,"Manual (physical) therapy techniques to 1 or more regions, each 15 minutes",county
+85025,0.027547727017041446,170.8653521568788,"Complete blood cell count (red cells, white blood cell, platelets), automated test",county
+97530,0.0303762770992914,340.42624074341165,"Therapeutic activities to improve function, with one-on-one contact between patient and provider, each 15 minutes",county
+71010,0.032817264369697646,380.92227640445634,"X-ray of chest, 1 view, front",county
+G0180,0.0013308926665350123,77.00144632237655,"Physician certification for medicare-covered home health services under a home health plan of care (patient not present), including contacts with home health agency and review of reports of patient status required by physicians to affirm the initial implem",cbsa
+99203,0.0021157112300890894,42.422848103189544,"New patient office or other outpatient visit, typically 30 minutes",cbsa
+99215,0.0029130617373184973,145.82530734345815,"Established patient office or other outpatient, visit typically 40 minutes",cbsa
+99221,0.003093162902503986,35.21066860955212,"Initial hospital inpatient care, typically 30 minutes per day",cbsa
+99204,0.003121712810595859,38.251768213733016,"New patient office or other outpatient visit, typically 45 minutes",cbsa
+98941,0.0034415981088589845,53.66030473939776,"Chiropractic manipulative treatment, 3 to 4 spinal regions",cbsa
+99202,0.003541256164481545,38.38073561088814,"New patient office or other outpatient visit, typically 20 minutes",cbsa
+J3301,0.0036886367705487935,474.76642268657355,"Injection, triamcinolone acetonide, not otherwise specified, 10 mg",cbsa
+99212,0.004079290298140148,156.9131562543578,"Established patient office or other outpatient visit, typically 10 minutes",cbsa
+90732,0.004185129951975727,8.590748254928945,"Vaccine for pneumococcal polysaccharide for injection beneath the skin or into muscle, patient 2 years or older",cbsa
+36415,0.004261093285726685,195.2438975531389,Insertion of needle into vein for collection of blood sample,cbsa
+99205,0.004311156055249874,26.11714919160808,"New patient office or other outpatient visit, typically 60 minutes",cbsa
+99238,0.004337102393977982,41.543285894891994,"Hospital discharge day management, 30 minutes or less",cbsa
+99211,0.004473934835601124,237.648213394153,"Established patient office or other outpatient visit, typically 5 minutes",cbsa
+20610,0.004662513352796838,113.58240651062918,Aspiration and/or injection of large joint or joint capsule,cbsa
+73030,0.004732855456176028,58.944619541162844,"X-ray of shoulder, minimum of 2 views",cbsa
+73502,0.004744462104930947,53.906061547443144,"X-ray of hip with pelvis, 2-3 views",cbsa
+73630,0.004998059992087231,78.70328701506112,"X-ray of foot, minimum of 3 views",cbsa
+G0438,0.004998545360767971,43.10447832477882,"Annual wellness visit; includes a personalized prevention plan of service (pps), initial visit",cbsa
+99231,0.005223198341686739,206.29608241031846,"Subsequent hospital inpatient care, typically 15 minutes per day",cbsa
+99222,0.005298442650757159,54.54910961369477,"Initial hospital inpatient care, typically 50 minutes per day",cbsa
+76942,0.005302719624497715,43.57064066798243,Ultrasonic guidance imaging supervision and interpretation for insertion of needle,cbsa
+99223,0.0053070580623057854,65.90430974629938,"Initial hospital inpatient care, typically 70 minutes per day",cbsa
+99291,0.0053735492238116715,75.3223663647663,"Critical care delivery critically ill or injured patient, first 30-74 minutes",cbsa
+G0008,0.00561756377742853,42.78146329901423,Administration of influenza virus vaccine,cbsa
+93880,0.005645423359999148,98.49629907839086,Ultrasound scanning of blood flow (outside the brain) on both sides of head and neck,cbsa
+72100,0.005741217436164549,58.95559807716543,"X-ray of lower and sacral spine, 2 or 3 views",cbsa
+73562,0.005789215824986354,92.69151632836851,"X-ray of knee, 3 views",cbsa
+97161,0.005860744205516194,17.935342430515846,"Evaluation of physical therapy, typically 20 minutes",cbsa
+93010,0.00603736832433468,325.14049572743744,Routine electrocardiogram (EKG) using at least 12 leads with interpretation and report,cbsa
+92083,0.006044122149960224,70.47371761005428,Measurement of field of vision during daylight conditions,cbsa
+92004,0.006423199320781529,56.979946583487546,"Eye and medical examination for diagnosis and treatment, new patient, 1 or more visits",cbsa
+90670,0.006590709718644653,10.55220138685996,Pneumococcal vaccine for injection into muscle,cbsa
+97112,0.006613381671704725,236.33899756724173,"Therapeutic procedure to re-educate brain-to-nerve-to-muscle function, each 15 minutes",cbsa
+99217,0.006719608179012649,22.46558889019171,Hospital observation care discharge,cbsa
+00740,0.0067946657961287646,15.307001464533451,Anesthesia for procedure on gastrointestinal tract using an endoscope,cbsa
+99214,0.007012452613545373,162.3645057486587,"Established patient office or other outpatient, visit typically 25 minutes",cbsa
+99220,0.007194558179520444,30.730865073637176,Hospital observation care typically 70 minutes per day,cbsa
+73560,0.00739216940501326,75.57100435335904,"X-ray of knee, 1 or 2 views",cbsa
+99233,0.007658996830265586,215.65869022933117,"Subsequent hospital inpatient care, typically 35 minutes per day",cbsa
+80053,0.007659221378362232,192.93961314448413,"Blood test, comprehensive group of blood chemicals",cbsa
+97162,0.007946485522270902,13.728678488090383,"Evaluation of physical therapy, typically 30 minutes",cbsa
+90662,0.008013864156695779,37.319976714823945,Vaccine for influenza for injection into muscle,cbsa
+81002,0.008089814474407087,79.62218652254923,"Urinalysis, manual test",cbsa
+G0439,0.008147065641708548,44.06124640382198,"Annual wellness visit, includes a personalized prevention plan of service (pps), subsequent visit",cbsa
+97530,0.008719166167876817,340.8046134547403,"Therapeutic activities to improve function, with one-on-one contact between patient and provider, each 15 minutes",cbsa
+99239,0.009161893738656142,46.8470877698248,"Hospital discharge day management, more than 30 minutes",cbsa
+81003,0.009338899289473164,92.68418823782152,Automated urinalysis test,cbsa
+00810,0.009750657888269787,30.26768488569448,Anesthesia for procedure on lower intestine using an endoscope,cbsa
+G0009,0.009989952466269327,14.341446634385303,Administration of pneumococcal vaccine,cbsa
+92014,0.010270301274772601,120.76658029176858,"Eye and medical examination for diagnosis and treatment, established patient, 1 or more visits",cbsa
+85025,0.010333865321129093,175.01289987326933,"Complete blood cell count (red cells, white blood cell, platelets), automated test",cbsa
+71020,0.010593591962959144,137.5726305428347,"X-ray of chest, 2 views, front and side",cbsa
+99213,0.010665376960632331,171.44054932150982,"Established patient office or other outpatient visit, typically 15 minutes",cbsa
+93306,0.010813572111446037,138.68310761211478,"Ultrasound examination of heart including color-depicted blood flow rate, direction, and valve function",cbsa
+85610,0.011031561518581414,218.87606513283868,"Blood test, clotting time",cbsa
+97140,0.011872497648516335,172.5593611812828,"Manual (physical) therapy techniques to 1 or more regions, each 15 minutes",cbsa
+99232,0.011909583155180814,280.29640413155846,"Subsequent hospital inpatient care, typically 25 minutes per day",cbsa
+99285,0.01311570486792993,41.34197468421008,"Emergency department visit, problem with significant threat to life or function",cbsa
+93000,0.013461170834726794,110.25954984076341,Routine EKG using at least 12 leads including interpretation and report,cbsa
+83036,0.014347970565169742,78.86716695157284,Hemoglobin A1C level,cbsa
+97110,0.01587154947001158,179.85912286846715,"Therapeutic exercise to develop strength, endurance, range of motion, and flexibility, each 15 minutes",cbsa
+99284,0.016674325322105815,26.998324255184965,"Emergency department visit, problem of high severity",cbsa
+99308,0.019309751445363593,452.18238681404154,"Subsequent nursing facility visit, typically 15 minutes per day",cbsa
+71010,0.020155063986014885,383.75484247341154,"X-ray of chest, 1 view, front",cbsa
+96372,0.02485622126266859,112.1173505066973,"Injection beneath the skin or into muscle for therapy, diagnosis, or prevention",cbsa
+99309,0.026287342525194764,419.73328835643315,"Subsequent nursing facility visit, typically 25 minutes per day",cbsa
+99283,0.03385879155538271,26.017832127620718,"Emergency department visit, moderately severe problem",cbsa
