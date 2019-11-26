@@ -25,7 +25,7 @@ va = [
         "OCCUP08", # occupation code
      ]
 
-df = pd.read_csv("RLMS-HSE_IND_1994_2018_STATA.tab", sep="\t", usecols=va)
+df = pd.read_csv("RLMS-HSE_IND_1994_2018_STATA.tab.gz", sep="\t", usecols=va)
 
 # Drop people who are not working
 df = df.loc[df.J1==1, :]
