@@ -25,6 +25,8 @@ va = [
         "psu", # survey PSU and geographic area
         "OCCUP08", # occupation code
         "M71", # Smokes
+        "M3", # Health Evaluation
+        "M43", # Ever diagnosed with diabetes
      ]
 
 # va = pd.read_csv('var_names.txt', sep=" ", header=None)
@@ -59,6 +61,11 @@ for var in NA_counts2.index:
         descriptions.append(var_dict[var])
     except:
         descriptions.append("Not found")
+        
+# Creat Table of our variables and their descriptions
+A = pd.DataFrame({"code": NA_counts2.index,
+                  "description": descriptions,
+                  "prct_missing": NA_counts2[0:]})
 ###################################################
         
 # Drop people who are not working
@@ -81,9 +88,6 @@ for v in "J10", "J8", "educ", "age":
     ii = dx.loc[:, v] < 99999997
     dx = dx.loc[ii, :]
     
-A = pd.DataFrame({"code": NA_counts2.index,
-                  "description": descriptions,
-                  "prct_missing": NA_counts2[0:]})
 
 
     
