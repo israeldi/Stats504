@@ -10,6 +10,7 @@ import numpy as np
 import pandas as pd
 
 # Variables to keep
+
 va = [
         "idind", # individual ID
         "J1", # current work status (1 = working)
@@ -23,19 +24,43 @@ va = [
         "H5", # gender 1 = male, 2 = female
         "psu", # survey PSU and geographic area
         "OCCUP08", # occupation code
+        "M71", # Smokes
      ]
 
-# df = pd.read_csv("RLMS-HSE_IND_1994_2018_STATA.tab.gz", sep="\t", usecols=va)
-df = pd.read_csv("RLMS-HSE_IND_1994_2018_STATA.tab.gz", sep="\t")
+# va = pd.read_csv('var_names.txt', sep=" ", header=None)
+va = list(va.iloc[:,0])
+
+df = pd.read_csv("RLMS-HSE_IND_1994_2018_STATA.tab.gz", sep="\t", usecols=va)
+# df = pd.read_csv("RLMS-HSE_IND_1994_2018_STATA.tab.gz", sep="\t")
+df.columns = map(str.upper, df.columns)
+
 NA_counts = df.isna().sum() / df.shape[0]
 NA_counts.sort_values(inplace=True,ascending=False)
 NA_counts2 = NA_counts[NA_counts < 0.5]
 
 # Output variable names to use
+'''
 outFile = open('var_names.txt', 'w')
 outFile.write("\n".join(str(item) for item in NA_counts2.index))
 outFile.close()
+'''
 
+###################################################
+m_cols = ["code", "description"]
+db = pd.read_csv('RLMS_codebook.csv', sep=',', 
+                 names=m_cols , encoding='latin-1')
+db['code'] = db['code'].str.replace('.','_')
+
+var_dict = dict(zip(db["code"], db["description"]))
+
+descriptions = []
+for var in NA_counts2.index:
+    try:
+        descriptions.append(var_dict[var])
+    except:
+        descriptions.append("Not found")
+###################################################
+        
 # Drop people who are not working
 df = df.loc[df.J1==1, :]
 
@@ -55,3 +80,28 @@ dx.year -= 2000
 for v in "J10", "J8", "educ", "age":
     ii = dx.loc[:, v] < 99999997
     dx = dx.loc[ii, :]
+    
+A = pd.DataFrame({"code": NA_counts2.index,
+                  "description": descriptions,
+                  "prct_missing": NA_counts2[0:]})
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
