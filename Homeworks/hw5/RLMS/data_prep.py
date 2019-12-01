@@ -25,7 +25,16 @@ va = [
         "OCCUP08", # occupation code
      ]
 
-df = pd.read_csv("RLMS-HSE_IND_1994_2018_STATA.tab.gz", sep="\t", usecols=va)
+# df = pd.read_csv("RLMS-HSE_IND_1994_2018_STATA.tab.gz", sep="\t", usecols=va)
+df = pd.read_csv("RLMS-HSE_IND_1994_2018_STATA.tab.gz", sep="\t")
+NA_counts = df.isna().sum() / df.shape[0]
+NA_counts.sort_values(inplace=True,ascending=False)
+NA_counts2 = NA_counts[NA_counts < 0.5]
+
+# Output variable names to use
+outFile = open('var_names.txt', 'w')
+outFile.write("\n".join(str(item) for item in NA_counts2.index))
+outFile.close()
 
 # Drop people who are not working
 df = df.loc[df.J1==1, :]
