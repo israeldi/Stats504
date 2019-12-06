@@ -5,23 +5,23 @@ import matplotlib.pyplot as plt
 from matplotlib.backends.backend_pdf import PdfPages
 # from data import df
 
-df = pd.read_csv("chns.csv.gz", sep=',')
+df1 = pd.read_csv("chns.csv.gz", sep=',')
 
 # Create a log income variable
-df = df.loc[df.indinc>=0, :]
-df["logindinc"] = np.log(1 + df.indinc)
+df1 = df1.loc[df1.indinc>=0, :]
+df1["logindinc"] = np.log(1 + df1.indinc)
 
 # Use dimension reduction regression for each of the
 # below outcome variables
-resp = ["d3kcal", "d3carbo", "d3fat", "d3protn"]
+resp1 = ["d3kcal", "d3carbo", "d3fat", "d3protn"]
 
 # Drop variables that we don't need
-xv = ["age", "female", "urban", "logindinc", "educ"]
-dx = df.loc[:, resp + xv]
+xv1 = ["age", "female", "urban", "logindinc", "educ"]
+dx1 = df1.loc[:, resp1 + xv1]
 
 # Center the data
-xmean = dx.loc[:, xv].mean(0)
-dx.loc[:, xv] -= xmean
+xmean1 = dx1.loc[:, xv1].mean(0)
+dx1.loc[:, xv1] -= xmean1
 
 
 def kreg(y, xmat, s):
@@ -39,50 +39,55 @@ def kreg(y, xmat, s):
 
     return f
 
-ages = np.linspace(18, 80, 100)
-
-pdf = PdfPages("dimred.pdf")
-
-# Base smoothing parameter for each value of ndim
-spl = {1: 0.2, 2: 0.2, 3: 0.3, 4: 0.3, 5: 0.4}
-
-for rv in resp:
-
-    # Get the dimension reduction directions
-    # Sliced Inverse Regressiongoodn
-    
-    m = SIR(dx[rv], dx.loc[:, xv])
-    s = m.fit(slice_n=500)
-
-    # Plot the eigenvalues
+def plot_eigs(title, eigs):
     plt.clf()
     plt.grid(True)
-    plt.title(rv)
-    plt.plot(s.eigs, '-o')
+    plt.title(title)
+    plt.plot(eigs, '-o')
     plt.xlabel("Component", size=15)
     plt.ylabel("Eigenvalue", size=15)
-    pdf.savefig()
     
-    ndim = 1
-    a = 0
+
+
+ages1 = np.linspace(18, 80, 100)
+
+# pdf = PdfPages("dimred.pdf")
+
+# Base smoothing parameter for each value of ndim
+spl1 = {1: 0.2, 2: 0.2, 3: 0.3, 4: 0.3, 5: 0.4}
+
+for rv1 in resp1:
+
+    # Get the dimension reduction directions
+    # Sliced Inverse Regression
+    
+    m1 = SIR(dx1[rv1], dx1.loc[:, xv1])
+    s1 = m1.fit(slice_n=500)
+
+    # Plot the eigenvalues
+    plot_eigs(rv1, s1.eigs)
+    # pdf.savefig()
+    
+    ndim1 = 1
+    a1 = 0
     '''
     for ndim in 1, 2, 3, 4, 5:
         for a in 0, 0.3, 0.5:
     '''
 
     # Reduce the dimension of the covariates
-    proj = s.params.iloc[:, 0:ndim]
-    xmat = np.dot(dx.loc[:, xv], proj)
+    proj1 = s1.params.iloc[:, 0:ndim1]
+    xmat1 = np.dot(dx1.loc[:, xv1], proj1)
 
     # Get the local regression function
-    sp = spl[ndim] + a
-    f = kreg(dx[rv], xmat, s=sp)
+    sp1 = spl1[ndim1] + a1
+    f1 = kreg(dx1[rv1], xmat1, s=sp1)
 
     # Create a dataframe for prediction
-    xp = dx.iloc[0:100, :].loc[:, xv].copy()
-    xp["age"] = ages
-    xp["logindinc"] = xmean.logindinc
-    xp["educ"] = xmean.educ
+    xp1 = dx1.iloc[0:100, :].loc[:, xv1].copy()
+    xp1["age"] = ages1
+    xp1["logindinc"] = xmean1.logindinc
+    xp1["educ"] = xmean1.educ
 
     plt.clf()
     plt.figure(figsize=(8, 5))
@@ -93,32 +98,32 @@ for rv in resp:
         for urban in 0, 1:
 
             # Prepare a dataframe for prediction
-            xp.loc[:, "female"] = female
-            xp.loc[:, "urban"] = urban
+            xp1.loc[:, "female"] = female
+            xp1.loc[:, "urban"] = urban
 
             # Transform the prediction dataframe the same as
             # the fitting dataframe
-            xq = xp - xmean
-            xq = np.dot(xq, proj)
+            xq1 = xp1 - xmean1
+            xq1 = np.dot(xq1, proj1)
 
             # Get the fitted values
-            yp = [f(xq[i, :]) for i in range(100)]
+            yp1 = [f1(xq1[i, :]) for i in range(100)]
 
             # A label for the line we will add here
-            label = [["rural", "urban"][urban], ["male", "female"][female]]
-            label = "%s %s" % tuple(label)
+            label1 = [["rural", "urban"][urban], ["male", "female"][female]]
+            label1 = "%s %s" % tuple(label1)
 
             # Add one line to the plot
-            plt.plot(ages, yp, '-', label=label)
+            plt.plot(ages1, yp1, '-', label=label1)
 
     ha, lb = plt.gca().get_legend_handles_labels()
     leg = plt.figlegend(ha, lb, "center right")
     leg.draw_frame(False)
 
-    plt.title("dim=%d, sp=%.2f" % (ndim, sp))
-    plt.ylabel(rv, size=15)
+    plt.title("dim=%d, sp=%.2f" % (ndim1, sp1))
+    plt.ylabel(rv1, size=15)
     plt.xlabel("Age", size=15)
 
-    pdf.savefig()
+    # pdf.savefig()
 
-pdf.close()
+# pdf.close()

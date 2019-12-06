@@ -7,7 +7,8 @@ from data_prep import dx
 import matplotlib.pyplot as plt
 from matplotlib.backends.backend_pdf import PdfPages
 
-fml = "I(np.log2(J10)) ~ 0 + C(status) + (bs(year, 5) + bs(age, 5) + bs(educ, 5))*Female + C(OCCUP08) + I(np.log2(J8))"
+fml = "I(np.log2(J10)) ~ 0 + C(status) + (bs(year, 5) + bs(age, 5) + \
+bs(educ, 5))*Female + C(OCCUP08) + I(np.log2(J8))"
 
 y, x = patsy.dmatrices(fml, dx, return_type='dataframe')
 y -= y.mean()
