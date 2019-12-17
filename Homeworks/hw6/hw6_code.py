@@ -107,9 +107,8 @@ def getWeights_FFD(d, length, threshold= 1e-5):
     w = np.array(w[::-1]).reshape(-1,1)
     return w
 
-def plotMinFFD(series, threshold = 0.01):
+def plotMinFFD(series, name, threshold = 0.01):
     from statsmodels.tsa.stattools import adfuller
-    # path,instName='./','ES1_Index_Method12'
     out = pd.DataFrame(columns=['adfStat','pVal','lags','nObs','95% conf','corr'])
     df0 = series
     
@@ -121,17 +120,15 @@ def plotMinFFD(series, threshold = 0.01):
         
         corr = np.corrcoef(data1, data2)[0,1]
         df2 = adfuller(data2, maxlag=1,regression='c', autolag=None)
-        out.loc[d] = list(df2[:4])+[df2[4]['5%']]+[corr] # with critical value
+        out.loc[d] = list(df2[:4])+[df2[4]['1%']]+[corr] # with critical value
     
     # out.to_csv(path+instName+'_testMinFFD.csv')
     out[['adfStat','corr']].plot(secondary_y='adfStat')
     plt.axhline(out['95% conf'].mean(),linewidth=1,color='r',linestyle='dotted')
-    plt.xlabel("Order of difference: d")
-    # plt.ylabel("ADF-stat")
     plt.title("Plot of ADF-stat and Correlation for %s" % (series.columns[0]))
-    # ax = plt.gca() 
-    # ax.yaxis.tick_right("ADF Stat")
-    # plt.savefig(path+instName+'_testMinFFD.png')
+    plt.xlabel("Order of difference: d")
+    plt.savefig('optimal_diff_%s.png' % (name))
+    # plt.ylabel("ADF-stat")
     return out
 
 '''
@@ -148,34 +145,37 @@ def plotWeights(dRange,nPlots,size):
 '''
 
 # Perform fractional differencing 
-name = "UDP"
-thresh = 0.001
-
-out = plotMinFFD(pd.DataFrame(df[name]), thresh)
-
-# Get optimal order of differentiation
-crit_val = out['95% conf'].mean()
-d_star = out[out['adfStat'] < crit_val].index[0]
-corr_star = out.loc[d_star, "corr"]
-
-# Plot optimal difference vs first difference
-frac_df1 = fracDiff_FFD(pd.DataFrame(df[['UDP', 'TCP']]), d_star, thresh)
-frac_df2 = fracDiff_FFD(pd.DataFrame(df[['UDP', 'TCP']]), 1, thresh)
-
-# get starting index since we removed first few observations to perform
-# fractional differencing
-ind_start = max(frac_df1.index[0], frac_df2.index[0])
-
-# plot no differencing
-plt.figure(0)
-plt.plot(df.loc[ind_start:, name] - df.loc[ind_start:, name].mean())
-
-# plot optimal difference
-plt.plot(frac_df1.loc[ind_start:, name] - frac_df1.loc[ind_start:, name].mean())
-
-# plot first-difference
-plt.plot(frac_df2.loc[ind_start:, name])
-plt.legend(["d=0","d*=%.2f" % (d_star), "d=1"])
-plt.title("Fractional Differencing on %s time-series" % (name))
-plt.show()
+names = ["UDP", "TCP"]
+for name in names:
+    thresh = 0.001
+    
+    out = plotMinFFD(pd.DataFrame(df[name]), name, thresh)
+    
+    # Get optimal order of differentiation
+    crit_val = out['95% conf'].mean()
+    d_star = out[out['adfStat'] < crit_val].index[0]
+    corr_star = out.loc[d_star, "corr"]
+    
+    # Plot optimal difference vs first difference
+    frac_df1 = fracDiff_FFD(pd.DataFrame(df[['UDP', 'TCP']]), d_star, thresh)
+    frac_df2 = fracDiff_FFD(pd.DataFrame(df[['UDP', 'TCP']]), 1, thresh)
+    
+    # get starting index since we removed first few observations to perform
+    # fractional differencing
+    ind_start = max(frac_df1.index[0], frac_df2.index[0])
+    
+    # plot no differencing
+    plt.figure()
+    plt.plot(df.loc[ind_start:, name] - df.loc[ind_start:, name].mean())
+    
+    # plot optimal difference
+    plt.plot(frac_df1.loc[ind_start:, name] - frac_df1.loc[ind_start:, name].mean())
+    
+    # plot first-difference
+    plt.plot(frac_df2.loc[ind_start:, name])
+    plt.legend(["d=0","d*=%.2f" % (d_star), "d=1"])
+    plt.title("Fractional Differencing on %s time-series" % (name))
+    plt.xlabel("time (min)")
+    plt.ylabel("log(# packets)")
+    plt.savefig('compare_diffs%s.png' % (name))
 
